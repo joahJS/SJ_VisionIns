@@ -42,6 +42,18 @@ namespace VisionIns
             _row = row;
         }
 
+        //ESC 키로 닫기
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Escape)
+            {
+                this.Close();
+                return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
         private void LoadInspectionDetail(string inspNo)
         {
             // 여기서 검사번호 기준으로 DB 조회
