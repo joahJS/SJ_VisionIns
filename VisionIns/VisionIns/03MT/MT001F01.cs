@@ -67,15 +67,15 @@ namespace VisionIns
         //
         private void SetDetailData(DataRow row)
         {
-            BasicInfoItem1Text.Text = row["INSPCD"].ToString();
-            BasicInfoItem2Text.Text = row["WDATE"].ToString();
-            BasicInfoItem3Text.Text = row["WTIME"].ToString();
+            BasicInfoItem1Text.Text = row["SLINO"].ToString();
+            BasicInfoItem2Text.Text = row["IDATE"].ToString();
+            BasicInfoItem3Text.Text = row["ITIME"].ToString();
             BasicInfoItem4Text.Text = row["ITCOD"].ToString();
-            BasicInfoItem5Text.Text = row["WORKNM"].ToString();
-            BasicInfoItem6Text.Text = row["INSPRSLT"].ToString();
+            BasicInfoItem5Text.Text = row["WKNM"].ToString();
+            BasicInfoItem6Text.Text = row["RSLT"].ToString();
 
             // 판정 색상
-            if (row["INSPRSLT"].ToString() == "OK")
+            if (row["RSLT"].ToString() == "OK")
             {
                 BasicInfoItem6Text.ForeColor = ColorTranslator.FromHtml("#5ED845");
                 lblSumSignal.BackColor = ColorTranslator.FromHtml("#5ED845");
@@ -86,13 +86,13 @@ namespace VisionIns
                 lblSumSignal.BackColor = ColorTranslator.FromHtml("#FF4D45");
             }
 
-            lblSumSignal.Text = row["INSPRSLT"].ToString();
+            lblSumSignal.Text = row["RSLT"].ToString();
 
-            //검사항목 구분(INSP1~INSP5 OK/NG 개수 계산)
+            //검사항목 구분(IITEM1~IITEM5 OK/NG 개수 계산)
             int okCount = 0;
             int ngCount = 0;
 
-            string[] inspColumns = { "INSP1", "INSP2", "INSP3", "INSP4", "INSP5" };
+            string[] inspColumns = { "IITEM1", "IITEM2", "IITEM3", "IITEM4", "IITEM5" };
 
             foreach (string col in inspColumns)
             {
@@ -112,12 +112,12 @@ namespace VisionIns
             lblSumValue1.Text = ngCount.ToString();
             lblSumValue2.Text = okCount.ToString();
 
-            // 검사항목 표시 예시
-            lblResultText1.Text = row["INSP1"].ToString();
-            lblResultText2.Text = row["INSP2"].ToString();
-            lblResultText3.Text = row["INSP3"].ToString();
-            lblResultText4.Text = row["INSP4"].ToString();
-            lblResultText5.Text = row["INSP5"].ToString();
+            // 검사항목 표시
+            lblResultText1.Text = row["IITEM1"].ToString();
+            lblResultText2.Text = row["IITEM2"].ToString();
+            lblResultText3.Text = row["IITEM3"].ToString();
+            lblResultText4.Text = row["IITEM4"].ToString();
+            lblResultText5.Text = row["IITEM5"].ToString();
         }
 
         private void BtnClose_Click(object sender, EventArgs e)
