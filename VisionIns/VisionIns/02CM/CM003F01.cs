@@ -43,7 +43,7 @@ namespace VisionIns
             Te_ITime.EditValue = DateTime.Now;
             Be_Itnam.EditValue = "";
             Tx_Itcod.EditValue = "";
-            Be_Plnnm.EditValue = "";
+            Tx_Plnnm.EditValue = "";
             Tx_Plncd.EditValue = LoginUser.USRCD;
             Rg_Rslt.EditValue = "";
             Cb_Iitem1.EditValue = "";
@@ -70,7 +70,7 @@ namespace VisionIns
             Te_ITime.EditValue = dt.Rows[0]["ITIME"]?.ToString();
             Be_Itnam.EditValue = dt.Rows[0]["ITNAM"]?.ToString();
             Tx_Itcod.EditValue = dt.Rows[0]["ITCOD"]?.ToString();
-            Be_Plnnm.EditValue = dt.Rows[0]["PLNNM"]?.ToString();
+            Tx_Plnnm.EditValue = dt.Rows[0]["WKNM"]?.ToString();
             Tx_Plncd.EditValue = dt.Rows[0]["PLNCD"]?.ToString();
             Rg_Rslt.EditValue = dt.Rows[0]["RSLT"]?.ToString();
             Cb_Iitem1.SelectedItem = dt.Rows[0]["IITEM1"]?.ToString();
@@ -110,8 +110,9 @@ namespace VisionIns
             
             string sIDate = Dt_IDate.EditValue?.ToString();
             string sITime = Te_ITime.Time.ToString("HH:mm:ss");
-            string sItcod = Tx_Itcod.EditValue?.ToString(); 
+            string sItcod = Tx_Itcod.EditValue?.ToString();
             string sPlncd = Tx_Plncd.EditValue?.ToString();
+            string sWknm = Tx_Plnnm.EditValue?.ToString();
             string sRslt = Rg_Rslt.EditValue?.ToString();
             string sIitem1 = Cb_Iitem1.SelectedItem?.ToString();
             string sIitem2 = Cb_Iitem2.SelectedItem?.ToString();
@@ -134,6 +135,7 @@ namespace VisionIns
                 dicParams.Add("ITIME", sITime);
                 dicParams.Add("ITCOD", sItcod);
                 dicParams.Add("PLNCD", sPlncd);
+                dicParams.Add("WKNM", sWknm);
                 dicParams.Add("RSLT", sRslt);
                 dicParams.Add("IITEM1", sIitem1);
                 dicParams.Add("IITEM2", sIitem2);
@@ -201,12 +203,46 @@ namespace VisionIns
                 ofd.Filter = "Images Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)| *.jpg; *.jpeg; *.gif; *.bmp; *.png";
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    Pic_Iimg.Image = new Bitmap(ofd.FileName);
-                    Pic_Iimg.Tag = ofd.FileName;
+                    try
+                    {
+                        // new Bitmap(path)로 바로 로드하면 파일이 계속 잠긴 상태로 남고,
+                        // 일부 파일에서 로드 실패가 조용히 무시되는 경우가 있어
+                        // 스트림으로 읽은 뒤 복제해서 원본 파일 핸들을 즉시 해제한다.
+                        using (FileStream fs = new FileStream(ofd.FileName, FileMode.Open, FileAccess.Read))
+                        using (Image loaded = Image.FromStream(fs))
+                        {
+                            Pic_Iimg.Image = new Bitmap(loaded);
+                        }
+                        Pic_Iimg.Tag = ofd.FileName;
+                        Pic_Iimg.Refresh();
+                    }
+                    catch (Exception ex)
+                    {
+                        XtraMessageBox.Show("이미지를 불러오지 못했습니다.\r\n" + ex.Message, "이미지 첨부 실패");
+                    }
                 }
             }
             else if (e.Button.Properties.Tag.Equals("DEL"))
                 Pic_Iimg.EditValue = null;
+        }
+
+        private void Be_Itnam_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            Be_Itnam.Focus();
+            ButtonEdit btnEdit = (ButtonEdit)sender;
+            string sVal = btnEdit.EditValue?.ToString().Trim();
+            ProductSelect frm = new ProductSelect();
+            frm.Owner = this;
+            frm.DataRowSendEvent += new ProductSelect.SendDataHandler(SetProductInfo);
+            frm.FindWord = sVal;
+            frm.ShowDialog();
+        }
+
+        private void SetProductInfo(DataRow row)
+        {
+            Tx_Itcod.EditValue = row["ITCOD"];
+            Be_Itnam.EditValue = row["ITNAM"];
+            
         }
     }
 }
