@@ -118,6 +118,22 @@ namespace VisionIns
             lblResultText3.Text = row["IITEM3"].ToString();
             lblResultText4.Text = row["IITEM4"].ToString();
             lblResultText5.Text = row["IITEM5"].ToString();
+
+            // 검사이미지
+            byte[] imgBytes = row["IIMG"] as byte[];
+
+            if (imgBytes != null && imgBytes.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imgBytes))
+                using (Image img = Image.FromStream(ms))
+                {
+                    picLiveImage.Image = new Bitmap(img);
+                }
+            }
+            else
+            {
+                picLiveImage.Image = null;
+            }
         }
 
         private void BtnClose_Click(object sender, EventArgs e)
