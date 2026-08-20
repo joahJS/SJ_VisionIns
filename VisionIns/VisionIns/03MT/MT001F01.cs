@@ -88,36 +88,34 @@ namespace VisionIns
 
             lblSumSignal.Text = row["RSLT"].ToString();
 
-            //검사항목 구분(IITEM1~IITEM5 OK/NG 개수 계산)
+            //검사항목 구분(IITEM1~IITEM5 OK/NG 개수 계산 및 항목별 표시)
             int okCount = 0;
             int ngCount = 0;
 
             string[] inspColumns = { "IITEM1", "IITEM2", "IITEM3", "IITEM4", "IITEM5" };
+            LabelControl[] inspLabels = { lblResultText1, lblResultText2, lblResultText3, lblResultText4, lblResultText5 };
 
-            foreach (string col in inspColumns)
+            for (int i = 0; i < inspColumns.Length; i++)
             {
-                string value = row[col]?.ToString().Trim().ToUpper();
+                string value = row[inspColumns[i]]?.ToString().Trim().ToUpper();
+
+                inspLabels[i].Text = value;
 
                 if (value == "OK")
                 {
                     okCount++;
+                    inspLabels[i].ForeColor = ColorTranslator.FromHtml("#5ED845");
                 }
                 else if (value == "NG")
                 {
                     ngCount++;
+                    inspLabels[i].ForeColor = ColorTranslator.FromHtml("#FF4D45");
                 }
             }
 
             // 화면 표시
             lblSumValue1.Text = ngCount.ToString();
             lblSumValue2.Text = okCount.ToString();
-
-            // 검사항목 표시
-            lblResultText1.Text = row["IITEM1"].ToString();
-            lblResultText2.Text = row["IITEM2"].ToString();
-            lblResultText3.Text = row["IITEM3"].ToString();
-            lblResultText4.Text = row["IITEM4"].ToString();
-            lblResultText5.Text = row["IITEM5"].ToString();
 
             // 검사이미지
             byte[] imgBytes = row["IIMG"] as byte[];
