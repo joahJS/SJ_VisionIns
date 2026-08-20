@@ -682,14 +682,6 @@
             this.gridColumn10.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 12F);
             this.gridColumn10.AppearanceCell.Options.UseBorderColor = true;
             this.gridColumn10.AppearanceCell.Options.UseFont = true;
-            this.gridColumn10.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn10.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn10.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F);
-            this.gridColumn10.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn10.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn10.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn10.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn10.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn10.Caption = "작업일자";
             this.gridColumn10.FieldName = "IDATE";
             this.gridColumn10.MinWidth = 17;
@@ -700,12 +692,6 @@
             // 
             // gridColumn11
             // 
-            this.gridColumn11.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn11.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn11.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn11.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn11.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn11.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn11.Caption = "작업시간";
             this.gridColumn11.FieldName = "ITIME";
             this.gridColumn11.MinWidth = 17;
@@ -718,12 +704,6 @@
             // 
             this.gridColumn12.AppearanceCell.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
             this.gridColumn12.AppearanceCell.Options.UseBorderColor = true;
-            this.gridColumn12.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn12.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn12.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn12.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn12.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn12.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn12.Caption = "제품코드";
             this.gridColumn12.FieldName = "ITCOD";
             this.gridColumn12.MinWidth = 17;
@@ -734,12 +714,6 @@
             // 
             // gridColumn18
             // 
-            this.gridColumn18.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn18.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn18.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn18.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn18.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn18.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn18.Caption = "검사결과";
             this.gridColumn18.FieldName = "RSLT";
             this.gridColumn18.MinWidth = 17;
@@ -750,12 +724,6 @@
             // 
             // gridColumn13
             // 
-            this.gridColumn13.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn13.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn13.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn13.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn13.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn13.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn13.Caption = "검사항목1";
             this.gridColumn13.FieldName = "IITEM1";
             this.gridColumn13.MinWidth = 17;
@@ -766,12 +734,6 @@
             // 
             // gridColumn14
             // 
-            this.gridColumn14.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn14.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn14.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn14.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn14.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn14.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn14.Caption = "검사항목2";
             this.gridColumn14.FieldName = "IITEM2";
             this.gridColumn14.MinWidth = 17;
@@ -782,12 +744,6 @@
             // 
             // gridColumn15
             // 
-            this.gridColumn15.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn15.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn15.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn15.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn15.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn15.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn15.Caption = "검사항목3";
             this.gridColumn15.FieldName = "IITEM3";
             this.gridColumn15.MinWidth = 17;
@@ -798,12 +754,6 @@
             // 
             // gridColumn16
             // 
-            this.gridColumn16.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn16.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn16.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn16.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn16.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn16.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn16.Caption = "검사항목4";
             this.gridColumn16.FieldName = "IITEM4";
             this.gridColumn16.MinWidth = 17;
@@ -814,12 +764,6 @@
             // 
             // gridColumn17
             // 
-            this.gridColumn17.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn17.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn17.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn17.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn17.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn17.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn17.Caption = "검사항목5";
             this.gridColumn17.FieldName = "IITEM5";
             this.gridColumn17.MinWidth = 17;
@@ -1001,14 +945,6 @@
             this.gridColumn1.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 12F);
             this.gridColumn1.AppearanceCell.Options.UseBorderColor = true;
             this.gridColumn1.AppearanceCell.Options.UseFont = true;
-            this.gridColumn1.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn1.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F);
-            this.gridColumn1.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn1.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn1.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn1.AppearanceHeader.Options.UseFont = true;
-            this.gridColumn1.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn1.Caption = "작업일자";
             this.gridColumn1.FieldName = "IDATE";
             this.gridColumn1.MinWidth = 17;
@@ -1019,12 +955,6 @@
             // 
             // gridColumn2
             // 
-            this.gridColumn2.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn2.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn2.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn2.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn2.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn2.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn2.Caption = "작업시간";
             this.gridColumn2.FieldName = "ITIME";
             this.gridColumn2.MinWidth = 17;
@@ -1037,12 +967,6 @@
             // 
             this.gridColumn3.AppearanceCell.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
             this.gridColumn3.AppearanceCell.Options.UseBorderColor = true;
-            this.gridColumn3.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn3.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn3.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn3.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn3.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn3.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn3.Caption = "제품코드";
             this.gridColumn3.FieldName = "ITCOD";
             this.gridColumn3.MinWidth = 17;
@@ -1053,12 +977,6 @@
             // 
             // gridColumn9
             // 
-            this.gridColumn9.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn9.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn9.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn9.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn9.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn9.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn9.Caption = "검사결과";
             this.gridColumn9.FieldName = "RSLT";
             this.gridColumn9.MinWidth = 17;
@@ -1069,12 +987,6 @@
             // 
             // gridColumn4
             // 
-            this.gridColumn4.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn4.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn4.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn4.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn4.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn4.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn4.Caption = "검사항목1";
             this.gridColumn4.FieldName = "IITEM1";
             this.gridColumn4.MinWidth = 17;
@@ -1085,12 +997,6 @@
             // 
             // gridColumn5
             // 
-            this.gridColumn5.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn5.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn5.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn5.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn5.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn5.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn5.Caption = "검사항목2";
             this.gridColumn5.FieldName = "IITEM2";
             this.gridColumn5.MinWidth = 17;
@@ -1101,12 +1007,6 @@
             // 
             // gridColumn6
             // 
-            this.gridColumn6.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn6.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn6.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn6.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn6.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn6.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn6.Caption = "검사항목3";
             this.gridColumn6.FieldName = "IITEM3";
             this.gridColumn6.MinWidth = 17;
@@ -1117,12 +1017,6 @@
             // 
             // gridColumn7
             // 
-            this.gridColumn7.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn7.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn7.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn7.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn7.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn7.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn7.Caption = "검사항목4";
             this.gridColumn7.FieldName = "IITEM4";
             this.gridColumn7.MinWidth = 17;
@@ -1133,12 +1027,6 @@
             // 
             // gridColumn8
             // 
-            this.gridColumn8.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(52)))), ((int)(((byte)(79)))));
-            this.gridColumn8.AppearanceHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(97)))), ((int)(((byte)(129)))));
-            this.gridColumn8.AppearanceHeader.ForeColor = System.Drawing.Color.White;
-            this.gridColumn8.AppearanceHeader.Options.UseBackColor = true;
-            this.gridColumn8.AppearanceHeader.Options.UseBorderColor = true;
-            this.gridColumn8.AppearanceHeader.Options.UseForeColor = true;
             this.gridColumn8.Caption = "검사항목5";
             this.gridColumn8.FieldName = "IITEM5";
             this.gridColumn8.MinWidth = 17;
