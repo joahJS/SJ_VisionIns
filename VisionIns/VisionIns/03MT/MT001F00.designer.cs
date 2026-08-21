@@ -671,7 +671,7 @@
             // gridColumn22
             // 
             this.gridColumn22.Caption = "검사결과";
-            this.gridColumn22.FieldName = "INSPCD";
+            this.gridColumn22.FieldName = "SLINO";
             this.gridColumn22.MinWidth = 17;
             this.gridColumn22.Name = "gridColumn22";
             this.gridColumn22.Width = 64;
