@@ -1611,8 +1611,7 @@
             // 
             // MT001F00
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1637, 1079);
             this.Controls.Add(this.layoutControl1);
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
