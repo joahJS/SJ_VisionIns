@@ -269,6 +269,7 @@
             this.pnlLiveImageBox.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(76)))), ((int)(((byte)(100)))));
             this.pnlLiveImageBox.Appearance.Options.UseBackColor = true;
             this.pnlLiveImageBox.Appearance.Options.UseBorderColor = true;
+            this.pnlLiveImageBox.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pnlLiveImageBox.Controls.Add(this.picLiveImage);
             this.pnlLiveImageBox.Controls.Add(this.pnlLiveImageHeader);
             this.pnlLiveImageBox.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -346,6 +347,7 @@
             this.pnlStatBox.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(76)))), ((int)(((byte)(100)))));
             this.pnlStatBox.Appearance.Options.UseBackColor = true;
             this.pnlStatBox.Appearance.Options.UseBorderColor = true;
+            this.pnlStatBox.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pnlStatBox.Controls.Add(this.tableLayoutPanel2);
             this.pnlStatBox.Controls.Add(this.pnlStatHeader);
             this.pnlStatBox.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -440,6 +442,7 @@
             this.pnlResultBox.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(76)))), ((int)(((byte)(100)))));
             this.pnlResultBox.Appearance.Options.UseBackColor = true;
             this.pnlResultBox.Appearance.Options.UseBorderColor = true;
+            this.pnlResultBox.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pnlResultBox.Controls.Add(this.pnlResultInnerWrap);
             this.pnlResultBox.Controls.Add(this.pnlResultHeader);
             this.pnlResultBox.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -552,6 +555,7 @@
             this.gcRecentHistoryWrapper.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.gcRecentHistoryWrapper.Appearance.Options.UseBackColor = true;
             this.gcRecentHistoryWrapper.Appearance.Options.UseBorderColor = true;
+            this.gcRecentHistoryWrapper.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.gcRecentHistoryWrapper.Controls.Add(this.gcRecentHistoryTbWrapper);
             this.gcRecentHistoryWrapper.Controls.Add(this.gcRecentHistoryHeader);
             this.gcRecentHistoryWrapper.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -814,6 +818,7 @@
             this.gcWorkInfoWrapper.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.gcWorkInfoWrapper.Appearance.Options.UseBackColor = true;
             this.gcWorkInfoWrapper.Appearance.Options.UseBorderColor = true;
+            this.gcWorkInfoWrapper.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.gcWorkInfoWrapper.Controls.Add(this.gcWorkInfoTbWrapper);
             this.gcWorkInfoWrapper.Controls.Add(this.gcWorkInfoHeader);
             this.gcWorkInfoWrapper.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1077,6 +1082,7 @@
             this.inspectSumWrapper.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.inspectSumWrapper.Appearance.Options.UseBackColor = true;
             this.inspectSumWrapper.Appearance.Options.UseBorderColor = true;
+            this.inspectSumWrapper.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.inspectSumWrapper.Controls.Add(this.inspectSumList);
             this.inspectSumWrapper.Controls.Add(this.inspectSumHeader);
             this.inspectSumWrapper.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1115,6 +1121,7 @@
             this.inspectSumItem4Wrap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(76)))), ((int)(((byte)(100)))));
             this.inspectSumItem4Wrap.Appearance.Options.UseBackColor = true;
             this.inspectSumItem4Wrap.Appearance.Options.UseBorderColor = true;
+            this.inspectSumItem4Wrap.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.inspectSumItem4Wrap.Controls.Add(this.inspectSumItem4);
             this.inspectSumItem4Wrap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inspectSumItem4Wrap.Location = new System.Drawing.Point(664, 5);
@@ -1185,6 +1192,7 @@
             this.inspectSumItem3Wrap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(76)))), ((int)(((byte)(100)))));
             this.inspectSumItem3Wrap.Appearance.Options.UseBackColor = true;
             this.inspectSumItem3Wrap.Appearance.Options.UseBorderColor = true;
+            this.inspectSumItem3Wrap.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.inspectSumItem3Wrap.Controls.Add(this.inspectSumItem3);
             this.inspectSumItem3Wrap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inspectSumItem3Wrap.Location = new System.Drawing.Point(444, 5);
@@ -1255,6 +1263,7 @@
             this.inspectSumItem2Wrap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(76)))), ((int)(((byte)(100)))));
             this.inspectSumItem2Wrap.Appearance.Options.UseBackColor = true;
             this.inspectSumItem2Wrap.Appearance.Options.UseBorderColor = true;
+            this.inspectSumItem2Wrap.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.inspectSumItem2Wrap.Controls.Add(this.inspectSumItem2InnerWrap);
             this.inspectSumItem2Wrap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inspectSumItem2Wrap.Location = new System.Drawing.Point(224, 5);
@@ -1325,6 +1334,7 @@
             this.inspectSumItem1Wrap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(39)))), ((int)(((byte)(56)))));
             this.inspectSumItem1Wrap.Appearance.Options.UseBackColor = true;
             this.inspectSumItem1Wrap.Appearance.Options.UseBorderColor = true;
+            this.inspectSumItem1Wrap.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.inspectSumItem1Wrap.Controls.Add(this.inspectSumItem1InnerWrap);
             this.inspectSumItem1Wrap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inspectSumItem1Wrap.Location = new System.Drawing.Point(4, 5);
@@ -1418,6 +1428,7 @@
             this.pnlHeader.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.pnlHeader.Appearance.Options.UseBackColor = true;
             this.pnlHeader.Appearance.Options.UseBorderColor = true;
+            this.pnlHeader.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pnlHeader.Controls.Add(this.pnlTimeBox);
             this.pnlHeader.Controls.Add(this.labelControl1);
             this.pnlHeader.Location = new System.Drawing.Point(2, 2);
@@ -1499,6 +1510,7 @@
             this.btnCloseWrap.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnCloseWrap.Appearance.Options.UseBackColor = true;
             this.btnCloseWrap.Appearance.Options.UseBorderColor = true;
+            this.btnCloseWrap.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.btnCloseWrap.Controls.Add(this.btnClose);
             this.btnCloseWrap.Location = new System.Drawing.Point(376, 3);
             this.btnCloseWrap.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
