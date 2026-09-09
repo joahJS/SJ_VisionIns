@@ -789,6 +789,7 @@
             this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement1.Tag = "CM001F00";
             this.accordionControlElement1.Text = "차종정보관리";
+            this.accordionControlElement1.Visible = false;
             this.accordionControlElement1.Click += new System.EventHandler(this.Element_Click);
             // 
             // accordionControlElement6
@@ -810,6 +811,7 @@
             this.accordionControlElement6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement6.ImageOptions.SvgImage")));
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "모니터링";
+            this.accordionControlElement6.Visible = false;
             // 
             // accordionControlElement21
             // 
@@ -821,6 +823,7 @@
             this.accordionControlElement21.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement21.Tag = "MT001F00";
             this.accordionControlElement21.Text = "불량검사";
+            this.accordionControlElement21.Visible = false;
             this.accordionControlElement21.Click += new System.EventHandler(this.Element_Click);
             // 
             // accordionControlElement22
@@ -833,6 +836,7 @@
             this.accordionControlElement22.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement22.Tag = "MT002F00";
             this.accordionControlElement22.Text = "다중QR스캔";
+            this.accordionControlElement22.Visible = false;
             this.accordionControlElement22.Click += new System.EventHandler(this.Element_Click);
             // 
             // accordionControl1
