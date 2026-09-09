@@ -126,7 +126,7 @@ namespace VisionIns
 
         private void BtnDel_Click(object sender, EventArgs e)
         {
-            string sSlino = GridViewRetr.GetFocusedRowCellValue("SLINO")?.ToString();
+            string sSlino = GridViewRetr.GetFocusedRowCellValue("ID")?.ToString();
 
             int i = GridViewRetr.GetFocusedDataSourceRowIndex();
 
@@ -138,7 +138,7 @@ namespace VisionIns
             {
                 Dictionary<string, string> dicParams = new Dictionary<string, string>();
                 dicParams.Add("CMD", "DEL");
-                dicParams.Add("SLINO", sSlino);
+                dicParams.Add("ID", sSlino);
 
                 DataTable dtResult = ComnEtcFunc.GetInfo(dicParams, this.PROCEDURE_ID);
                 if (dtResult.Rows.Count > 0)
@@ -180,7 +180,7 @@ namespace VisionIns
             {
                 CM003F01 frm = new CM003F01();
                 frm.Owner = this;
-                frm._SLINO = GridViewRetr.GetFocusedRowCellValue("SLINO")?.ToString();
+                frm._SLINO = GridViewRetr.GetFocusedRowCellValue("ID")?.ToString();
                 frm.DataRowSendEvent += new CM003F01.SendDataHandler(GetDataRow);
                 frm.Show();
             }

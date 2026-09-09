@@ -42,6 +42,9 @@
             this.Dt_IDate = new DevExpress.XtraEditors.DateEdit();
             this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
             this.Pic_Iimg = new DevExpress.XtraEditors.PictureEdit();
+            this.pnlDebugImage = new System.Windows.Forms.Panel();
+            this.Pic_DebugImg = new System.Windows.Forms.PictureBox();
+            this.lblDebugImageHeader = new System.Windows.Forms.Label();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.Bt_SaveMul = new DevExpress.XtraEditors.SimpleButton();
@@ -126,6 +129,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_DebugImg)).BeginInit();
+            this.pnlDebugImage.SuspendLayout();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -267,7 +272,37 @@
             this.Pic_Iimg.Size = new System.Drawing.Size(376, 359);
             this.Pic_Iimg.StyleController = this.layoutControl2;
             this.Pic_Iimg.TabIndex = 51;
-            // 
+            //
+            // pnlDebugImage
+            //
+            this.pnlDebugImage.Controls.Add(this.Pic_DebugImg);
+            this.pnlDebugImage.Controls.Add(this.lblDebugImageHeader);
+            this.pnlDebugImage.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlDebugImage.Location = new System.Drawing.Point(0, 474);
+            this.pnlDebugImage.Name = "pnlDebugImage";
+            this.pnlDebugImage.Padding = new System.Windows.Forms.Padding(8);
+            this.pnlDebugImage.Size = new System.Drawing.Size(888, 260);
+            this.pnlDebugImage.TabIndex = 100;
+            //
+            // lblDebugImageHeader
+            //
+            this.lblDebugImageHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblDebugImageHeader.Location = new System.Drawing.Point(8, 8);
+            this.lblDebugImageHeader.Name = "lblDebugImageHeader";
+            this.lblDebugImageHeader.Size = new System.Drawing.Size(872, 20);
+            this.lblDebugImageHeader.TabIndex = 1;
+            this.lblDebugImageHeader.Text = "디버그이미지";
+            //
+            // Pic_DebugImg
+            //
+            this.Pic_DebugImg.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pic_DebugImg.Location = new System.Drawing.Point(8, 28);
+            this.Pic_DebugImg.Name = "Pic_DebugImg";
+            this.Pic_DebugImg.Size = new System.Drawing.Size(872, 224);
+            this.Pic_DebugImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Pic_DebugImg.TabIndex = 0;
+            this.Pic_DebugImg.TabStop = false;
+            //
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -658,7 +693,7 @@
             this.layoutControlGroup3.Location = new System.Drawing.Point(460, 36);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.Size = new System.Drawing.Size(408, 418);
-            this.layoutControlGroup3.Text = "검사이미지";
+            this.layoutControlGroup3.Text = "원본이미지";
             this.layoutControlGroup3.CustomButtonClick += new DevExpress.XtraBars.Docking2010.BaseButtonEventHandler(this.layoutControlGroup3_CustomButtonClick);
             // 
             // layoutControlItem8
@@ -775,7 +810,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 474);
+            this.ClientSize = new System.Drawing.Size(888, 734);
+            this.Controls.Add(this.pnlDebugImage);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CM003F01";
@@ -829,6 +865,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_DebugImg)).EndInit();
+            this.pnlDebugImage.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -883,5 +921,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem23;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem24;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
+        private System.Windows.Forms.Panel pnlDebugImage;
+        private System.Windows.Forms.PictureBox Pic_DebugImg;
+        private System.Windows.Forms.Label lblDebugImageHeader;
     }
 }
