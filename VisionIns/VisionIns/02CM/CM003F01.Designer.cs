@@ -40,13 +40,8 @@
             this.Te_ITime = new DevExpress.XtraEditors.TimeEdit();
             this.Tx_Itcod = new DevExpress.XtraEditors.TextEdit();
             this.Dt_IDate = new DevExpress.XtraEditors.DateEdit();
-            this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
             this.Pic_Iimg = new DevExpress.XtraEditors.PictureEdit();
-            this.pnlDebugImage = new System.Windows.Forms.Panel();
             this.Pic_DebugImg = new System.Windows.Forms.PictureBox();
-            this.lblDebugImageHeader = new System.Windows.Forms.Label();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.Bt_SaveMul = new DevExpress.XtraEditors.SimpleButton();
             this.Bt_Close = new DevExpress.XtraEditors.SimpleButton();
             this.Bt_Save = new DevExpress.XtraEditors.SimpleButton();
@@ -75,6 +70,8 @@
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroupDebug = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItemDebug = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -93,11 +90,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Tx_Itcod.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dt_IDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dt_IDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
-            this.layoutControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Iimg.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_DebugImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tx_Slino.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rg_Rslt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cb_Iitem2.Properties)).BeginInit();
@@ -122,6 +116,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupDebug)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemDebug)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
@@ -129,8 +125,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_DebugImg)).BeginInit();
-            this.pnlDebugImage.SuspendLayout();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -143,7 +137,8 @@
             this.layoutControl1.Controls.Add(this.Te_ITime);
             this.layoutControl1.Controls.Add(this.Tx_Itcod);
             this.layoutControl1.Controls.Add(this.Dt_IDate);
-            this.layoutControl1.Controls.Add(this.layoutControl2);
+            this.layoutControl1.Controls.Add(this.Pic_Iimg);
+            this.layoutControl1.Controls.Add(this.Pic_DebugImg);
             this.layoutControl1.Controls.Add(this.Bt_SaveMul);
             this.layoutControl1.Controls.Add(this.Bt_Close);
             this.layoutControl1.Controls.Add(this.Bt_Save);
@@ -158,7 +153,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(888, 474);
+            this.layoutControl1.Size = new System.Drawing.Size(888, 834);
             this.layoutControl1.TabIndex = 3;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -254,76 +249,25 @@
             this.Dt_IDate.StyleController = this.layoutControl1;
             this.Dt_IDate.TabIndex = 54;
             // 
-            // layoutControl2
-            // 
-            this.layoutControl2.Controls.Add(this.Pic_Iimg);
-            this.layoutControl2.Location = new System.Drawing.Point(484, 87);
-            this.layoutControl2.Name = "layoutControl2";
-            this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(380, 363);
-            this.layoutControl2.TabIndex = 53;
-            this.layoutControl2.Text = "layoutControl2";
-            // 
             // Pic_Iimg
-            // 
+            //
             this.Pic_Iimg.Location = new System.Drawing.Point(2, 2);
             this.Pic_Iimg.Name = "Pic_Iimg";
             this.Pic_Iimg.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.Pic_Iimg.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.Pic_Iimg.Size = new System.Drawing.Size(376, 359);
-            this.Pic_Iimg.StyleController = this.layoutControl2;
+            this.Pic_Iimg.Size = new System.Drawing.Size(432, 325);
+            this.Pic_Iimg.StyleController = this.layoutControl1;
             this.Pic_Iimg.TabIndex = 51;
-            //
-            // pnlDebugImage
-            //
-            this.pnlDebugImage.Controls.Add(this.Pic_DebugImg);
-            this.pnlDebugImage.Controls.Add(this.lblDebugImageHeader);
-            this.pnlDebugImage.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlDebugImage.Location = new System.Drawing.Point(0, 474);
-            this.pnlDebugImage.Name = "pnlDebugImage";
-            this.pnlDebugImage.Padding = new System.Windows.Forms.Padding(8);
-            this.pnlDebugImage.Size = new System.Drawing.Size(888, 420);
-            this.pnlDebugImage.TabIndex = 100;
-            //
-            // lblDebugImageHeader
-            //
-            this.lblDebugImageHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblDebugImageHeader.Location = new System.Drawing.Point(8, 8);
-            this.lblDebugImageHeader.Name = "lblDebugImageHeader";
-            this.lblDebugImageHeader.Size = new System.Drawing.Size(872, 20);
-            this.lblDebugImageHeader.TabIndex = 1;
-            this.lblDebugImageHeader.Text = "디버그이미지";
             //
             // Pic_DebugImg
             //
-            this.Pic_DebugImg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pic_DebugImg.Location = new System.Drawing.Point(8, 28);
+            this.Pic_DebugImg.Location = new System.Drawing.Point(2, 2);
             this.Pic_DebugImg.Name = "Pic_DebugImg";
-            this.Pic_DebugImg.Size = new System.Drawing.Size(872, 384);
+            this.Pic_DebugImg.Size = new System.Drawing.Size(380, 743);
             this.Pic_DebugImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Pic_DebugImg.TabIndex = 0;
+            this.Pic_DebugImg.TabIndex = 101;
             this.Pic_DebugImg.TabStop = false;
             //
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem6});
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(380, 363);
-            this.layoutControlGroup1.TextVisible = false;
-            // 
-            // layoutControlItem6
-            // 
-            this.layoutControlItem6.Control = this.Pic_Iimg;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(380, 363);
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem6.TextVisible = false;
-            // 
             // Bt_SaveMul
             // 
             this.Bt_SaveMul.Appearance.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -478,9 +422,10 @@
             this.layoutControlGroup2,
             this.emptySpaceItem1,
             this.layoutControlGroup3,
-            this.layoutControlGroup5});
+            this.layoutControlGroup5,
+            this.layoutControlGroupDebug});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(888, 474);
+            this.Root.Size = new System.Drawing.Size(888, 834);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem21
@@ -691,21 +636,39 @@
             this.layoutControlGroup3.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
             this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem8});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(460, 36);
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 454);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(408, 418);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(460, 380);
             this.layoutControlGroup3.Text = "원본이미지";
             this.layoutControlGroup3.CustomButtonClick += new DevExpress.XtraBars.Docking2010.BaseButtonEventHandler(this.layoutControlGroup3_CustomButtonClick);
-            // 
+            //
             // layoutControlItem8
-            // 
-            this.layoutControlItem8.Control = this.layoutControl2;
+            //
+            this.layoutControlItem8.Control = this.Pic_Iimg;
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(384, 367);
+            this.layoutControlItem8.Size = new System.Drawing.Size(436, 329);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
-            // 
+            //
+            // layoutControlGroupDebug
+            //
+            this.layoutControlGroupDebug.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItemDebug});
+            this.layoutControlGroupDebug.Location = new System.Drawing.Point(460, 36);
+            this.layoutControlGroupDebug.Name = "layoutControlGroupDebug";
+            this.layoutControlGroupDebug.Size = new System.Drawing.Size(408, 798);
+            this.layoutControlGroupDebug.Text = "디버그이미지";
+            //
+            // layoutControlItemDebug
+            //
+            this.layoutControlItemDebug.Control = this.Pic_DebugImg;
+            this.layoutControlItemDebug.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItemDebug.Name = "layoutControlItemDebug";
+            this.layoutControlItemDebug.Size = new System.Drawing.Size(384, 747);
+            this.layoutControlItemDebug.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemDebug.TextVisible = false;
+            //
             // layoutControlGroup5
             // 
             this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -811,8 +774,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 894);
-            this.Controls.Add(this.pnlDebugImage);
+            this.ClientSize = new System.Drawing.Size(888, 834);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CM003F01";
@@ -830,11 +792,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Tx_Itcod.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dt_IDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dt_IDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
-            this.layoutControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Iimg.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_DebugImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tx_Slino.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rg_Rslt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cb_Iitem2.Properties)).EndInit();
@@ -859,6 +818,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupDebug)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemDebug)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
@@ -866,8 +827,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Pic_DebugImg)).EndInit();
-            this.pnlDebugImage.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -875,10 +834,7 @@
         #endregion
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraLayout.LayoutControl layoutControl2;
         private DevExpress.XtraEditors.PictureEdit Pic_Iimg;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraEditors.SimpleButton Bt_SaveMul;
         private DevExpress.XtraEditors.SimpleButton Bt_Close;
         private DevExpress.XtraEditors.SimpleButton Bt_Save;
@@ -895,6 +851,8 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroupDebug;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItemDebug;
         private DevExpress.XtraEditors.TimeEdit Te_ITime;
         private DevExpress.XtraEditors.TextEdit Tx_Itcod;
         private DevExpress.XtraEditors.DateEdit Dt_IDate;
@@ -922,8 +880,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem23;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem24;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
-        private System.Windows.Forms.Panel pnlDebugImage;
         private System.Windows.Forms.PictureBox Pic_DebugImg;
-        private System.Windows.Forms.Label lblDebugImageHeader;
     }
 }
