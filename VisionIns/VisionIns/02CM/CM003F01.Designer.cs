@@ -269,6 +269,7 @@
             this.Pic_Iimg.Location = new System.Drawing.Point(2, 2);
             this.Pic_Iimg.Name = "Pic_Iimg";
             this.Pic_Iimg.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.Pic_Iimg.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.Pic_Iimg.Size = new System.Drawing.Size(376, 359);
             this.Pic_Iimg.StyleController = this.layoutControl2;
             this.Pic_Iimg.TabIndex = 51;
@@ -281,7 +282,7 @@
             this.pnlDebugImage.Location = new System.Drawing.Point(0, 474);
             this.pnlDebugImage.Name = "pnlDebugImage";
             this.pnlDebugImage.Padding = new System.Windows.Forms.Padding(8);
-            this.pnlDebugImage.Size = new System.Drawing.Size(888, 260);
+            this.pnlDebugImage.Size = new System.Drawing.Size(888, 420);
             this.pnlDebugImage.TabIndex = 100;
             //
             // lblDebugImageHeader
@@ -298,7 +299,7 @@
             this.Pic_DebugImg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pic_DebugImg.Location = new System.Drawing.Point(8, 28);
             this.Pic_DebugImg.Name = "Pic_DebugImg";
-            this.Pic_DebugImg.Size = new System.Drawing.Size(872, 224);
+            this.Pic_DebugImg.Size = new System.Drawing.Size(872, 384);
             this.Pic_DebugImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pic_DebugImg.TabIndex = 0;
             this.Pic_DebugImg.TabStop = false;
@@ -810,7 +811,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 734);
+            this.ClientSize = new System.Drawing.Size(888, 894);
             this.Controls.Add(this.pnlDebugImage);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
