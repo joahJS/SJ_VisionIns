@@ -167,7 +167,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1320, 800);
+            this.layoutControl1.Size = new System.Drawing.Size(1320, 910);
             this.layoutControl1.TabIndex = 3;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -287,7 +287,7 @@
             // 
             this.Pic_DebugImg.Location = new System.Drawing.Point(484, 78);
             this.Pic_DebugImg.Name = "Pic_DebugImg";
-            this.Pic_DebugImg.Size = new System.Drawing.Size(382, 525);
+            this.Pic_DebugImg.Size = new System.Drawing.Size(382, 625);
             this.Pic_DebugImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pic_DebugImg.TabIndex = 101;
             this.Pic_DebugImg.TabStop = false;
@@ -296,7 +296,7 @@
             // 
             this.Pic_DebugImg_Cam2.Location = new System.Drawing.Point(894, 78);
             this.Pic_DebugImg_Cam2.Name = "Pic_DebugImg_Cam2";
-            this.Pic_DebugImg_Cam2.Size = new System.Drawing.Size(382, 525);
+            this.Pic_DebugImg_Cam2.Size = new System.Drawing.Size(382, 625);
             this.Pic_DebugImg_Cam2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pic_DebugImg_Cam2.TabIndex = 102;
             this.Pic_DebugImg_Cam2.TabStop = false;
@@ -460,7 +460,7 @@
             this.layoutControlGroup3,
             this.layoutControlGroupOrigCam2});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1320, 800);
+            this.Root.Size = new System.Drawing.Size(1320, 910);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem21
@@ -669,17 +669,17 @@
             this.layoutControlItemDebug});
             this.layoutControlGroupDebug.Location = new System.Drawing.Point(460, 34);
             this.layoutControlGroupDebug.Name = "layoutControlGroupDebug";
-            this.layoutControlGroupDebug.Size = new System.Drawing.Size(410, 746);
+            this.layoutControlGroupDebug.Size = new System.Drawing.Size(410, 846);
             this.layoutControlGroupDebug.Text = "디버그이미지(CAM1)";
             // 
             // layoutControlItemDebug
             // 
             this.layoutControlItemDebug.Control = this.Pic_DebugImg;
             this.layoutControlItemDebug.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItemDebug.MaxSize = new System.Drawing.Size(386, 529);
-            this.layoutControlItemDebug.MinSize = new System.Drawing.Size(386, 529);
+            this.layoutControlItemDebug.MaxSize = new System.Drawing.Size(386, 629);
+            this.layoutControlItemDebug.MinSize = new System.Drawing.Size(386, 629);
             this.layoutControlItemDebug.Name = "layoutControlItemDebug";
-            this.layoutControlItemDebug.Size = new System.Drawing.Size(386, 702);
+            this.layoutControlItemDebug.Size = new System.Drawing.Size(386, 802);
             this.layoutControlItemDebug.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItemDebug.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemDebug.TextVisible = false;
@@ -690,17 +690,17 @@
             this.layoutControlItemDebugCam2});
             this.layoutControlGroupDebugCam2.Location = new System.Drawing.Point(870, 34);
             this.layoutControlGroupDebugCam2.Name = "layoutControlGroupDebugCam2";
-            this.layoutControlGroupDebugCam2.Size = new System.Drawing.Size(430, 746);
+            this.layoutControlGroupDebugCam2.Size = new System.Drawing.Size(430, 846);
             this.layoutControlGroupDebugCam2.Text = "디버그이미지(CAM2)";
             // 
             // layoutControlItemDebugCam2
             // 
             this.layoutControlItemDebugCam2.Control = this.Pic_DebugImg_Cam2;
             this.layoutControlItemDebugCam2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItemDebugCam2.MaxSize = new System.Drawing.Size(386, 529);
-            this.layoutControlItemDebugCam2.MinSize = new System.Drawing.Size(386, 529);
+            this.layoutControlItemDebugCam2.MaxSize = new System.Drawing.Size(386, 629);
+            this.layoutControlItemDebugCam2.MinSize = new System.Drawing.Size(386, 629);
             this.layoutControlItemDebugCam2.Name = "layoutControlItemDebugCam2";
-            this.layoutControlItemDebugCam2.Size = new System.Drawing.Size(406, 702);
+            this.layoutControlItemDebugCam2.Size = new System.Drawing.Size(406, 802);
             this.layoutControlItemDebugCam2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItemDebugCam2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemDebugCam2.TextVisible = false;
@@ -850,7 +850,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1320, 800);
+            this.ClientSize = new System.Drawing.Size(1320, 910);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CM003F01";
