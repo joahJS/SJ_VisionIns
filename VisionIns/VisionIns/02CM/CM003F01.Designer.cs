@@ -41,7 +41,9 @@
             this.Tx_Itcod = new DevExpress.XtraEditors.TextEdit();
             this.Dt_IDate = new DevExpress.XtraEditors.DateEdit();
             this.Pic_Iimg = new DevExpress.XtraEditors.PictureEdit();
+            this.Pic_Iimg_Cam2 = new DevExpress.XtraEditors.PictureEdit();
             this.Pic_DebugImg = new System.Windows.Forms.PictureBox();
+            this.Pic_DebugImg_Cam2 = new System.Windows.Forms.PictureBox();
             this.Bt_SaveMul = new DevExpress.XtraEditors.SimpleButton();
             this.Bt_Close = new DevExpress.XtraEditors.SimpleButton();
             this.Bt_Save = new DevExpress.XtraEditors.SimpleButton();
@@ -70,8 +72,12 @@
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroupOrigCam2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItemOrigCam2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroupDebug = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemDebug = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroupDebugCam2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItemDebugCam2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -91,7 +97,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dt_IDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dt_IDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Iimg.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Iimg_Cam2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_DebugImg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_DebugImg_Cam2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tx_Slino.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rg_Rslt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cb_Iitem2.Properties)).BeginInit();
@@ -116,8 +124,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupOrigCam2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemOrigCam2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupDebug)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemDebug)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupDebugCam2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemDebugCam2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
@@ -138,7 +150,9 @@
             this.layoutControl1.Controls.Add(this.Tx_Itcod);
             this.layoutControl1.Controls.Add(this.Dt_IDate);
             this.layoutControl1.Controls.Add(this.Pic_Iimg);
+            this.layoutControl1.Controls.Add(this.Pic_Iimg_Cam2);
             this.layoutControl1.Controls.Add(this.Pic_DebugImg);
+            this.layoutControl1.Controls.Add(this.Pic_DebugImg_Cam2);
             this.layoutControl1.Controls.Add(this.Bt_SaveMul);
             this.layoutControl1.Controls.Add(this.Bt_Close);
             this.layoutControl1.Controls.Add(this.Bt_Save);
@@ -153,7 +167,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(888, 834);
+            this.layoutControl1.Size = new System.Drawing.Size(828, 1234);
             this.layoutControl1.TabIndex = 3;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -255,18 +269,37 @@
             this.Pic_Iimg.Name = "Pic_Iimg";
             this.Pic_Iimg.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.Pic_Iimg.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.Pic_Iimg.Size = new System.Drawing.Size(432, 325);
+            this.Pic_Iimg.Size = new System.Drawing.Size(386, 325);
             this.Pic_Iimg.StyleController = this.layoutControl1;
             this.Pic_Iimg.TabIndex = 51;
+            //
+            // Pic_Iimg_Cam2
+            //
+            this.Pic_Iimg_Cam2.Location = new System.Drawing.Point(2, 2);
+            this.Pic_Iimg_Cam2.Name = "Pic_Iimg_Cam2";
+            this.Pic_Iimg_Cam2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.Pic_Iimg_Cam2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.Pic_Iimg_Cam2.Size = new System.Drawing.Size(386, 325);
+            this.Pic_Iimg_Cam2.StyleController = this.layoutControl1;
+            this.Pic_Iimg_Cam2.TabIndex = 52;
             //
             // Pic_DebugImg
             //
             this.Pic_DebugImg.Location = new System.Drawing.Point(2, 2);
             this.Pic_DebugImg.Name = "Pic_DebugImg";
-            this.Pic_DebugImg.Size = new System.Drawing.Size(320, 743);
+            this.Pic_DebugImg.Size = new System.Drawing.Size(386, 325);
             this.Pic_DebugImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pic_DebugImg.TabIndex = 101;
             this.Pic_DebugImg.TabStop = false;
+            //
+            // Pic_DebugImg_Cam2
+            //
+            this.Pic_DebugImg_Cam2.Location = new System.Drawing.Point(2, 2);
+            this.Pic_DebugImg_Cam2.Name = "Pic_DebugImg_Cam2";
+            this.Pic_DebugImg_Cam2.Size = new System.Drawing.Size(386, 325);
+            this.Pic_DebugImg_Cam2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Pic_DebugImg_Cam2.TabIndex = 102;
+            this.Pic_DebugImg_Cam2.TabStop = false;
             //
             // Bt_SaveMul
             // 
@@ -422,10 +455,12 @@
             this.layoutControlGroup2,
             this.emptySpaceItem1,
             this.layoutControlGroup3,
+            this.layoutControlGroupOrigCam2,
             this.layoutControlGroup5,
-            this.layoutControlGroupDebug});
+            this.layoutControlGroupDebug,
+            this.layoutControlGroupDebugCam2});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(828, 834);
+            this.Root.Size = new System.Drawing.Size(828, 1234);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem21
@@ -638,8 +673,8 @@
             this.layoutControlItem8});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 454);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(460, 380);
-            this.layoutControlGroup3.Text = "원본이미지";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(410, 380);
+            this.layoutControlGroup3.Text = "원본이미지(CAM1)";
             this.layoutControlGroup3.CustomButtonClick += new DevExpress.XtraBars.Docking2010.BaseButtonEventHandler(this.layoutControlGroup3_CustomButtonClick);
             //
             // layoutControlItem8
@@ -647,27 +682,63 @@
             this.layoutControlItem8.Control = this.Pic_Iimg;
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(436, 329);
+            this.layoutControlItem8.Size = new System.Drawing.Size(386, 329);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
+            //
+            // layoutControlGroupOrigCam2
+            //
+            this.layoutControlGroupOrigCam2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItemOrigCam2});
+            this.layoutControlGroupOrigCam2.Location = new System.Drawing.Point(410, 454);
+            this.layoutControlGroupOrigCam2.Name = "layoutControlGroupOrigCam2";
+            this.layoutControlGroupOrigCam2.Size = new System.Drawing.Size(410, 380);
+            this.layoutControlGroupOrigCam2.Text = "원본이미지(CAM2)";
+            //
+            // layoutControlItemOrigCam2
+            //
+            this.layoutControlItemOrigCam2.Control = this.Pic_Iimg_Cam2;
+            this.layoutControlItemOrigCam2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItemOrigCam2.Name = "layoutControlItemOrigCam2";
+            this.layoutControlItemOrigCam2.Size = new System.Drawing.Size(386, 329);
+            this.layoutControlItemOrigCam2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemOrigCam2.TextVisible = false;
             //
             // layoutControlGroupDebug
             //
             this.layoutControlGroupDebug.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemDebug});
-            this.layoutControlGroupDebug.Location = new System.Drawing.Point(460, 36);
+            this.layoutControlGroupDebug.Location = new System.Drawing.Point(0, 834);
             this.layoutControlGroupDebug.Name = "layoutControlGroupDebug";
-            this.layoutControlGroupDebug.Size = new System.Drawing.Size(348, 798);
-            this.layoutControlGroupDebug.Text = "디버그이미지";
+            this.layoutControlGroupDebug.Size = new System.Drawing.Size(410, 380);
+            this.layoutControlGroupDebug.Text = "디버그이미지(CAM1)";
             //
             // layoutControlItemDebug
             //
             this.layoutControlItemDebug.Control = this.Pic_DebugImg;
             this.layoutControlItemDebug.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemDebug.Name = "layoutControlItemDebug";
-            this.layoutControlItemDebug.Size = new System.Drawing.Size(324, 747);
+            this.layoutControlItemDebug.Size = new System.Drawing.Size(386, 329);
             this.layoutControlItemDebug.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemDebug.TextVisible = false;
+            //
+            // layoutControlGroupDebugCam2
+            //
+            this.layoutControlGroupDebugCam2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItemDebugCam2});
+            this.layoutControlGroupDebugCam2.Location = new System.Drawing.Point(410, 834);
+            this.layoutControlGroupDebugCam2.Name = "layoutControlGroupDebugCam2";
+            this.layoutControlGroupDebugCam2.Size = new System.Drawing.Size(410, 380);
+            this.layoutControlGroupDebugCam2.Text = "디버그이미지(CAM2)";
+            //
+            // layoutControlItemDebugCam2
+            //
+            this.layoutControlItemDebugCam2.Control = this.Pic_DebugImg_Cam2;
+            this.layoutControlItemDebugCam2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItemDebugCam2.Name = "layoutControlItemDebugCam2";
+            this.layoutControlItemDebugCam2.Size = new System.Drawing.Size(386, 329);
+            this.layoutControlItemDebugCam2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemDebugCam2.TextVisible = false;
             //
             // layoutControlGroup5
             // 
@@ -774,7 +845,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 834);
+            this.ClientSize = new System.Drawing.Size(828, 1234);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CM003F01";
@@ -793,7 +864,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dt_IDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dt_IDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Iimg.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Iimg_Cam2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_DebugImg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_DebugImg_Cam2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tx_Slino.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rg_Rslt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cb_Iitem2.Properties)).EndInit();
@@ -818,8 +891,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupOrigCam2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemOrigCam2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupDebug)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemDebug)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupDebugCam2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemDebugCam2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
@@ -835,6 +912,7 @@
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraEditors.PictureEdit Pic_Iimg;
+        private DevExpress.XtraEditors.PictureEdit Pic_Iimg_Cam2;
         private DevExpress.XtraEditors.SimpleButton Bt_SaveMul;
         private DevExpress.XtraEditors.SimpleButton Bt_Close;
         private DevExpress.XtraEditors.SimpleButton Bt_Save;
@@ -851,8 +929,12 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroupOrigCam2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItemOrigCam2;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroupDebug;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemDebug;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroupDebugCam2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItemDebugCam2;
         private DevExpress.XtraEditors.TimeEdit Te_ITime;
         private DevExpress.XtraEditors.TextEdit Tx_Itcod;
         private DevExpress.XtraEditors.DateEdit Dt_IDate;
@@ -881,5 +963,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem24;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
         private System.Windows.Forms.PictureBox Pic_DebugImg;
+        private System.Windows.Forms.PictureBox Pic_DebugImg_Cam2;
     }
 }

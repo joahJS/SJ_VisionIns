@@ -8,7 +8,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using Newtonsoft.Json.Linq;
 
 namespace VisionIns
 {
@@ -55,30 +54,7 @@ namespace VisionIns
 
             if (dt != null)
             {
-                //T_0001H.RESULT_JSON에서 제품유형(part_type)만 뽑아 그리드용 컬럼으로 추가
-                if (dt.Columns.Contains("RESULT_JSON") && !dt.Columns.Contains("PART_TYPE"))
-                {
-                    dt.Columns.Add("PART_TYPE", typeof(string));
-
-                    foreach (DataRow row in dt.Rows)
-                    {
-                        string json = row["RESULT_JSON"]?.ToString();
-
-                        if (string.IsNullOrEmpty(json))
-                            continue;
-
-                        try
-                        {
-                            JObject resultObj = JObject.Parse(json);
-                            row["PART_TYPE"] = resultObj["part_type"]?.ToString();
-                        }
-                        catch
-                        {
-                            //RESULT_JSON 형식이 예상과 다른 경우 무시
-                        }
-                    }
-                }
-
+                // CAM1/CAM2 병합 및 PART_TYPE 추출은 DP_CM003F00(LIST)에서 처리됨
                 GridRetr.DataSource = dt;
             }
         }
@@ -119,7 +95,7 @@ namespace VisionIns
         public void GetDataRow(string row)
         {
             BtnRetr.PerformClick();
-            int i = GridViewRetr.LocateByDisplayText(0, GridColItcod, row + "");
+            int i = GridViewRetr.LocateByDisplayText(0, GridColSlino, row + "");
             GridViewRetr.FocusedRowHandle = i;
         }
 
@@ -129,8 +105,8 @@ namespace VisionIns
 
             int i = GridViewRetr.GetFocusedDataSourceRowIndex();
 
-            if (XtraMessageBox.Show("검사번호 : " + sSlino + 
-                  " \r\n선택된 항목을 삭제하시겠습니까? \r\n", "검사이력 삭제여부", MessageBoxButtons.YesNo) != DialogResult.Yes)
+            if (XtraMessageBox.Show("검사번호 : " + sSlino +
+                  " \r\n선택된 항목을 삭제하시겠습니까? (CAM1/CAM2 이미지가 함께 삭제됩니다) \r\n", "검사이력 삭제여부", MessageBoxButtons.YesNo) != DialogResult.Yes)
                 return;
 
             try

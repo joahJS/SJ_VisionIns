@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.IO;
-using Newtonsoft.Json.Linq;
 
 namespace VisionIns
 {
@@ -54,33 +53,40 @@ namespace VisionIns
             Cb_Iitem5.EditValue = "";
             Me_Rk.EditValue = "";
             Pic_Iimg.EditValue = null;
+            Pic_Iimg_Cam2.EditValue = null;
 
             Bt_SaveMul.Enabled = true;
         }
 
         private void SetValue()
         {
+            // CAM1/CAM2로 나뉘어 저장된 두 행을 검사 1건으로 합쳐 보여줘야 하므로,
+            // 단건조회(DP_CM003F01)가 아니라 DP_CM003F00의 PAIR_DETAIL(신규)을 사용한다.
+            // _SLINO로 CAM1/CAM2 중 어느 쪽 ID를 넘겨도 그 짝까지 함께 찾아서 반환된다.
             Dictionary<string, string> dicParams = new Dictionary<string, string>();
             dicParams.Clear();
-            dicParams.Add("CMD", "INFO_BOUND");
+            dicParams.Add("CMD", "PAIR_DETAIL");
             dicParams.Add("ID", _SLINO);
-            DataTable dt = DBConn.GetDataTable(DBConn.dbCon, PROCEDURE_ID, dicParams);
+            DataTable dt = DBConn.GetDataTable(DBConn.dbCon, "DP_CM003F00", dicParams);
 
-            //T_0001H(AI 비전검사 결과) 기준 매핑 - INSP_HIST 전용이던 IDATE/ITIME/ITCOD/WKNM/PLNCD/IITEM1~5/RK는
-            //이 테이블에 존재하지 않아 남겨두면 SetDetailData처럼 예외가 나므로 실제 컬럼으로 교체
-            Tx_Slino.EditValue = dt.Rows[0]["ID"]?.ToString();
+            Tx_Slino.EditValue = dt.Rows[0]["DISP_ID"]?.ToString();
 
             DateTime ts;
-            if (DateTime.TryParse(dt.Rows[0]["TIMESTAMP"]?.ToString(), out ts))
+            if (DateTime.TryParse(dt.Rows[0]["DISP_TIMESTAMP"]?.ToString(), out ts))
             {
                 Dt_IDate.EditValue = ts.ToString("yyyy-MM-dd");
                 Te_ITime.EditValue = ts;
             }
 
-            Tx_Itcod.EditValue = dt.Rows[0]["CAMERA_ID"]?.ToString();
-            Rg_Rslt.EditValue = dt.Rows[0]["RSLT"]?.ToString();
+            // 카메라 구분은 화면에서 없앴으므로 비워둠
+            Tx_Itcod.EditValue = "";
 
-            //검사항목1~5는 고정 5항목 개념이 없어 사용하지 않음(부품/캡 단위 결과는 RESULT_JSON 참고)
+            string rslt1 = dt.Rows[0]["CAM1_RSLT"]?.ToString();
+            string rslt2 = dt.Rows[0]["CAM2_RSLT"]?.ToString();
+            Rg_Rslt.EditValue = (rslt1 == "NG" || rslt2 == "NG") ? "NG"
+                : (!string.IsNullOrEmpty(rslt1) || !string.IsNullOrEmpty(rslt2) ? "OK" : "");
+
+            //검사항목1~5는 고정 5항목 개념이 없어 사용하지 않음(부품/캡 단위 결과는 아래 비고 참고)
             Cb_Iitem1.EditValue = "";
             Cb_Iitem2.EditValue = "";
             Cb_Iitem3.EditValue = "";
@@ -90,32 +96,24 @@ namespace VisionIns
             Tx_Plnnm.EditValue = "";
             Tx_Plncd.EditValue = "";
 
-            string resultJson = dt.Rows[0]["RESULT_JSON"]?.ToString();
-            string partType = "";
+            Be_Itnam.EditValue = dt.Rows[0]["PART_TYPE"]?.ToString();
 
-            if (!string.IsNullOrEmpty(resultJson))
-            {
-                try
-                {
-                    JObject resultObj = JObject.Parse(resultJson);
-                    partType = resultObj["part_type"]?.ToString();
-                }
-                catch
-                {
-                    //RESULT_JSON 형식이 예상과 다른 경우 무시
-                }
-            }
+            Me_Rk.EditValue = string.Format(
+                "[CAM1] 결과 {0} / 부품 {1} / 캡 {2} / 불량 {3}\r\n[CAM2] 결과 {4} / 부품 {5} / 캡 {6} / 불량 {7}",
+                rslt1, dt.Rows[0]["CAM1_PART_COUNT"], dt.Rows[0]["CAM1_TOTAL_CAPS"], dt.Rows[0]["CAM1_TOTAL_DEFECTS"],
+                rslt2, dt.Rows[0]["CAM2_PART_COUNT"], dt.Rows[0]["CAM2_TOTAL_CAPS"], dt.Rows[0]["CAM2_TOTAL_DEFECTS"]);
 
-            Be_Itnam.EditValue = partType;
+            byte[] uploadedImg1 = Convert.IsDBNull(dt.Rows[0]["CAM1_UPLOADED_IMAGE"]) ? null : (byte[])dt.Rows[0]["CAM1_UPLOADED_IMAGE"];
+            Pic_Iimg.Image = byteArrayToImage(uploadedImg1);
 
-            Me_Rk.EditValue = string.Format("부품개수 {0} / 캡개수 {1} / 불량개수 {2} / 처리시간 {3}ms",
-                dt.Rows[0]["PART_COUNT"], dt.Rows[0]["TOTAL_CAPS"], dt.Rows[0]["TOTAL_DEFECTS"], dt.Rows[0]["PROCESSING_TIME_MS"]);
+            byte[] debugImg1 = Convert.IsDBNull(dt.Rows[0]["CAM1_DEBUG_IMAGE"]) ? null : (byte[])dt.Rows[0]["CAM1_DEBUG_IMAGE"];
+            Pic_DebugImg.Image = byteArrayToImage(debugImg1);
 
-            byte[] uploadedImg = Convert.IsDBNull(dt.Rows[0]["UPLOADED_IMAGE"]) ? null : (byte[])dt.Rows[0]["UPLOADED_IMAGE"];
-            Pic_Iimg.Image = byteArrayToImage(uploadedImg);
+            byte[] uploadedImg2 = Convert.IsDBNull(dt.Rows[0]["CAM2_UPLOADED_IMAGE"]) ? null : (byte[])dt.Rows[0]["CAM2_UPLOADED_IMAGE"];
+            Pic_Iimg_Cam2.Image = byteArrayToImage(uploadedImg2);
 
-            byte[] debugImg = Convert.IsDBNull(dt.Rows[0]["DEBUG_IMAGE"]) ? null : (byte[])dt.Rows[0]["DEBUG_IMAGE"];
-            Pic_DebugImg.Image = byteArrayToImage(debugImg);
+            byte[] debugImg2 = Convert.IsDBNull(dt.Rows[0]["CAM2_DEBUG_IMAGE"]) ? null : (byte[])dt.Rows[0]["CAM2_DEBUG_IMAGE"];
+            Pic_DebugImg_Cam2.Image = byteArrayToImage(debugImg2);
         }
 
         private Image byteArrayToImage(byte[] byteArrayIn)

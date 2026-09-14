@@ -38,13 +38,15 @@
             this.GridColSlino = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GridColIdate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GridColITime = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GridColItcod = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GridColItnam = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GridColRslt = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GridColIItem1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GridColIItem2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GridColIItem3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GridColIItem4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColRslt1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColRslt2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColPartCount1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColPartCount2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColCaps1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColCaps2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColDefects1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GridColDefects2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.BtnRetr = new DevExpress.XtraEditors.SimpleButton();
             this.BtnExcel = new DevExpress.XtraEditors.SimpleButton();
@@ -187,13 +189,15 @@
             this.GridColSlino,
             this.GridColIdate,
             this.GridColITime,
-            this.GridColItcod,
             this.GridColItnam,
-            this.GridColRslt,
-            this.GridColIItem1,
-            this.GridColIItem2,
-            this.GridColIItem3,
-            this.GridColIItem4});
+            this.GridColRslt1,
+            this.GridColRslt2,
+            this.GridColPartCount1,
+            this.GridColPartCount2,
+            this.GridColCaps1,
+            this.GridColCaps2,
+            this.GridColDefects1,
+            this.GridColDefects2});
             this.GridViewRetr.DetailHeight = 327;
             this.GridViewRetr.GridControl = this.GridRetr;
             this.GridViewRetr.IndicatorWidth = 40;
@@ -213,10 +217,10 @@
             this.GridColSlino.OptionsColumn.AllowFocus = false;
             this.GridColSlino.Visible = true;
             this.GridColSlino.VisibleIndex = 0;
-            this.GridColSlino.Width = 120;
-            // 
+            this.GridColSlino.Width = 80;
+            //
             // GridColIdate
-            // 
+            //
             this.GridColIdate.AppearanceCell.Options.UseTextOptions = true;
             this.GridColIdate.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.GridColIdate.Caption = "검사일자";
@@ -228,10 +232,10 @@
             this.GridColIdate.OptionsColumn.AllowFocus = false;
             this.GridColIdate.Visible = true;
             this.GridColIdate.VisibleIndex = 1;
-            this.GridColIdate.Width = 120;
-            // 
+            this.GridColIdate.Width = 110;
+            //
             // GridColITime
-            // 
+            //
             this.GridColITime.AppearanceCell.Options.UseTextOptions = true;
             this.GridColITime.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.GridColITime.Caption = "검사시간";
@@ -243,96 +247,122 @@
             this.GridColITime.OptionsColumn.AllowFocus = false;
             this.GridColITime.Visible = true;
             this.GridColITime.VisibleIndex = 2;
-            this.GridColITime.Width = 120;
-            // 
-            // GridColItcod
-            // 
-            this.GridColItcod.AppearanceCell.Options.UseTextOptions = true;
-            this.GridColItcod.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.GridColItcod.Caption = "카메라";
-            this.GridColItcod.FieldName = "CAMERA_ID";
-            this.GridColItcod.Name = "GridColItcod";
-            this.GridColItcod.OptionsColumn.AllowEdit = false;
-            this.GridColItcod.OptionsColumn.AllowFocus = false;
-            this.GridColItcod.Visible = true;
-            this.GridColItcod.VisibleIndex = 3;
-            this.GridColItcod.Width = 100;
-            // 
+            this.GridColITime.Width = 110;
+            //
             // GridColItnam
-            // 
+            //
             this.GridColItnam.Caption = "제품유형";
             this.GridColItnam.FieldName = "PART_TYPE";
             this.GridColItnam.Name = "GridColItnam";
             this.GridColItnam.OptionsColumn.AllowEdit = false;
             this.GridColItnam.OptionsColumn.AllowFocus = false;
             this.GridColItnam.Visible = true;
-            this.GridColItnam.VisibleIndex = 4;
-            this.GridColItnam.Width = 199;
-            // 
-            // GridColRslt
-            // 
-            this.GridColRslt.AppearanceCell.Options.UseTextOptions = true;
-            this.GridColRslt.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.GridColRslt.Caption = "검사결과";
-            this.GridColRslt.FieldName = "RSLT";
-            this.GridColRslt.Name = "GridColRslt";
-            this.GridColRslt.OptionsColumn.AllowEdit = false;
-            this.GridColRslt.OptionsColumn.AllowFocus = false;
-            this.GridColRslt.Visible = true;
-            this.GridColRslt.VisibleIndex = 5;
-            this.GridColRslt.Width = 100;
-            // 
-            // GridColIItem1
-            // 
-            this.GridColIItem1.AppearanceCell.Options.UseTextOptions = true;
-            this.GridColIItem1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.GridColIItem1.Caption = "부품개수";
-            this.GridColIItem1.FieldName = "PART_COUNT";
-            this.GridColIItem1.Name = "GridColIItem1";
-            this.GridColIItem1.OptionsColumn.AllowEdit = false;
-            this.GridColIItem1.OptionsColumn.AllowFocus = false;
-            this.GridColIItem1.Visible = true;
-            this.GridColIItem1.VisibleIndex = 6;
-            this.GridColIItem1.Width = 87;
-            // 
-            // GridColIItem2
-            // 
-            this.GridColIItem2.AppearanceCell.Options.UseTextOptions = true;
-            this.GridColIItem2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.GridColIItem2.Caption = "캡개수";
-            this.GridColIItem2.FieldName = "TOTAL_CAPS";
-            this.GridColIItem2.Name = "GridColIItem2";
-            this.GridColIItem2.OptionsColumn.AllowEdit = false;
-            this.GridColIItem2.OptionsColumn.AllowFocus = false;
-            this.GridColIItem2.Visible = true;
-            this.GridColIItem2.VisibleIndex = 7;
-            this.GridColIItem2.Width = 87;
-            // 
-            // GridColIItem3
-            // 
-            this.GridColIItem3.AppearanceCell.Options.UseTextOptions = true;
-            this.GridColIItem3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.GridColIItem3.Caption = "불량개수";
-            this.GridColIItem3.FieldName = "TOTAL_DEFECTS";
-            this.GridColIItem3.Name = "GridColIItem3";
-            this.GridColIItem3.OptionsColumn.AllowEdit = false;
-            this.GridColIItem3.OptionsColumn.AllowFocus = false;
-            this.GridColIItem3.Visible = true;
-            this.GridColIItem3.VisibleIndex = 8;
-            this.GridColIItem3.Width = 87;
-            // 
-            // GridColIItem4
-            // 
-            this.GridColIItem4.AppearanceCell.Options.UseTextOptions = true;
-            this.GridColIItem4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.GridColIItem4.Caption = "처리시간(ms)";
-            this.GridColIItem4.FieldName = "PROCESSING_TIME_MS";
-            this.GridColIItem4.Name = "GridColIItem4";
-            this.GridColIItem4.OptionsColumn.AllowEdit = false;
-            this.GridColIItem4.OptionsColumn.AllowFocus = false;
-            this.GridColIItem4.Visible = true;
-            this.GridColIItem4.VisibleIndex = 9;
-            this.GridColIItem4.Width = 110;
+            this.GridColItnam.VisibleIndex = 3;
+            this.GridColItnam.Width = 140;
+            //
+            // GridColRslt1
+            //
+            this.GridColRslt1.AppearanceCell.Options.UseTextOptions = true;
+            this.GridColRslt1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.GridColRslt1.Caption = "검사결과(CAM1)";
+            this.GridColRslt1.FieldName = "RSLT1";
+            this.GridColRslt1.Name = "GridColRslt1";
+            this.GridColRslt1.OptionsColumn.AllowEdit = false;
+            this.GridColRslt1.OptionsColumn.AllowFocus = false;
+            this.GridColRslt1.Visible = true;
+            this.GridColRslt1.VisibleIndex = 4;
+            this.GridColRslt1.Width = 110;
+            //
+            // GridColRslt2
+            //
+            this.GridColRslt2.AppearanceCell.Options.UseTextOptions = true;
+            this.GridColRslt2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.GridColRslt2.Caption = "검사결과(CAM2)";
+            this.GridColRslt2.FieldName = "RSLT2";
+            this.GridColRslt2.Name = "GridColRslt2";
+            this.GridColRslt2.OptionsColumn.AllowEdit = false;
+            this.GridColRslt2.OptionsColumn.AllowFocus = false;
+            this.GridColRslt2.Visible = true;
+            this.GridColRslt2.VisibleIndex = 5;
+            this.GridColRslt2.Width = 110;
+            //
+            // GridColPartCount1
+            //
+            this.GridColPartCount1.AppearanceCell.Options.UseTextOptions = true;
+            this.GridColPartCount1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.GridColPartCount1.Caption = "부품개수(CAM1)";
+            this.GridColPartCount1.FieldName = "PART_COUNT1";
+            this.GridColPartCount1.Name = "GridColPartCount1";
+            this.GridColPartCount1.OptionsColumn.AllowEdit = false;
+            this.GridColPartCount1.OptionsColumn.AllowFocus = false;
+            this.GridColPartCount1.Visible = true;
+            this.GridColPartCount1.VisibleIndex = 6;
+            this.GridColPartCount1.Width = 100;
+            //
+            // GridColPartCount2
+            //
+            this.GridColPartCount2.AppearanceCell.Options.UseTextOptions = true;
+            this.GridColPartCount2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.GridColPartCount2.Caption = "부품개수(CAM2)";
+            this.GridColPartCount2.FieldName = "PART_COUNT2";
+            this.GridColPartCount2.Name = "GridColPartCount2";
+            this.GridColPartCount2.OptionsColumn.AllowEdit = false;
+            this.GridColPartCount2.OptionsColumn.AllowFocus = false;
+            this.GridColPartCount2.Visible = true;
+            this.GridColPartCount2.VisibleIndex = 7;
+            this.GridColPartCount2.Width = 100;
+            //
+            // GridColCaps1
+            //
+            this.GridColCaps1.AppearanceCell.Options.UseTextOptions = true;
+            this.GridColCaps1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.GridColCaps1.Caption = "캡개수(CAM1)";
+            this.GridColCaps1.FieldName = "TOTAL_CAPS1";
+            this.GridColCaps1.Name = "GridColCaps1";
+            this.GridColCaps1.OptionsColumn.AllowEdit = false;
+            this.GridColCaps1.OptionsColumn.AllowFocus = false;
+            this.GridColCaps1.Visible = true;
+            this.GridColCaps1.VisibleIndex = 8;
+            this.GridColCaps1.Width = 100;
+            //
+            // GridColCaps2
+            //
+            this.GridColCaps2.AppearanceCell.Options.UseTextOptions = true;
+            this.GridColCaps2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.GridColCaps2.Caption = "캡개수(CAM2)";
+            this.GridColCaps2.FieldName = "TOTAL_CAPS2";
+            this.GridColCaps2.Name = "GridColCaps2";
+            this.GridColCaps2.OptionsColumn.AllowEdit = false;
+            this.GridColCaps2.OptionsColumn.AllowFocus = false;
+            this.GridColCaps2.Visible = true;
+            this.GridColCaps2.VisibleIndex = 9;
+            this.GridColCaps2.Width = 100;
+            //
+            // GridColDefects1
+            //
+            this.GridColDefects1.AppearanceCell.Options.UseTextOptions = true;
+            this.GridColDefects1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.GridColDefects1.Caption = "불량개수(CAM1)";
+            this.GridColDefects1.FieldName = "TOTAL_DEFECTS1";
+            this.GridColDefects1.Name = "GridColDefects1";
+            this.GridColDefects1.OptionsColumn.AllowEdit = false;
+            this.GridColDefects1.OptionsColumn.AllowFocus = false;
+            this.GridColDefects1.Visible = true;
+            this.GridColDefects1.VisibleIndex = 10;
+            this.GridColDefects1.Width = 100;
+            //
+            // GridColDefects2
+            //
+            this.GridColDefects2.AppearanceCell.Options.UseTextOptions = true;
+            this.GridColDefects2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.GridColDefects2.Caption = "불량개수(CAM2)";
+            this.GridColDefects2.FieldName = "TOTAL_DEFECTS2";
+            this.GridColDefects2.Name = "GridColDefects2";
+            this.GridColDefects2.OptionsColumn.AllowEdit = false;
+            this.GridColDefects2.OptionsColumn.AllowFocus = false;
+            this.GridColDefects2.Visible = true;
+            this.GridColDefects2.VisibleIndex = 11;
+            this.GridColDefects2.Width = 100;
             //
             // repositoryItemTextEdit1
             // 
@@ -709,18 +739,20 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraGrid.Columns.GridColumn GridColSlino;
         private DevExpress.XtraGrid.Columns.GridColumn GridColIdate;
-        private DevExpress.XtraGrid.Columns.GridColumn GridColItcod;
         private DevExpress.XtraGrid.Columns.GridColumn GridColItnam;
-        private DevExpress.XtraGrid.Columns.GridColumn GridColRslt;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColRslt1;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColRslt2;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
         private DevExpress.XtraEditors.SimpleButton BtnAdd;
         private DevExpress.XtraEditors.SimpleButton BtnDel;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraGrid.Columns.GridColumn GridColITime;
-        private DevExpress.XtraGrid.Columns.GridColumn GridColIItem1;
-        private DevExpress.XtraGrid.Columns.GridColumn GridColIItem2;
-        private DevExpress.XtraGrid.Columns.GridColumn GridColIItem3;
-        private DevExpress.XtraGrid.Columns.GridColumn GridColIItem4;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColPartCount1;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColPartCount2;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColCaps1;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColCaps2;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColDefects1;
+        private DevExpress.XtraGrid.Columns.GridColumn GridColDefects2;
     }
 }
