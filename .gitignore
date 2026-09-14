@@ -4,6 +4,11 @@
 *.user
 *.userosscache
 *.sln.docstates
+UpgradeLog*.htm
+UpgradeLog*.XML
+_UpgradeReport_Files/
+Backup/
+Backup*/
 
 # Build results
 [Bb]in/

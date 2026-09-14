@@ -73,6 +73,8 @@ namespace VisionIns
         #endregion
 
         #region [라벨출력]
+        private const int LABEL_COPIES = 6;
+
         private void BtnPrint_Click(object sender, EventArgs e)
         {
             int[] iSelected = GridViewRetr.GetSelectedRows();
@@ -85,10 +87,19 @@ namespace VisionIns
             DataTable dt = GridRetr.DataSource as DataTable;
             DataTable dtClone = dt.Clone();
 
+            // 선택된 항목마다 라벨 1개(1장)씩, 총 LABEL_COPIES(6)장이 한번에 출력되도록
+            // 순번(0001~0006)을 매긴 사본 행을 만든다.
             for (int i = 0; i < iSelected.Length; i++)
             {
-                DataRow row = GridViewRetr.GetDataRow(iSelected[i]);
-                dtClone.ImportRow(row);
+                DataRow srcRow = GridViewRetr.GetDataRow(iSelected[i]);
+
+                for (int copy = 1; copy <= LABEL_COPIES; copy++)
+                {
+                    DataRow newRow = dtClone.NewRow();
+                    newRow.ItemArray = srcRow.ItemArray;
+                    newRow["SEQNO"] = copy.ToString("0000");
+                    dtClone.Rows.Add(newRow);
+                }
             }
 
             QrLabelReport report = new QrLabelReport();
