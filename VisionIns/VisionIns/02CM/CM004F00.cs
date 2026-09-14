@@ -102,10 +102,12 @@ namespace VisionIns
                 }
             }
 
-            QrLabelReport report = new QrLabelReport();
-            report._dt = dtClone;
-            report.CreateDocument();
-            report.ShowPreviewDialog();
+            using (QrLabelReport report = new QrLabelReport())
+            {
+                report._dt = dtClone;
+                report.CreateDocument();
+                report.ShowPreviewDialog();
+            }
         }
         #endregion
 
