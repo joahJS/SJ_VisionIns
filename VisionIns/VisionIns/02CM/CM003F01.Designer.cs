@@ -167,7 +167,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1320, 910);
+            this.layoutControl1.Size = new System.Drawing.Size(1320, 730);
             this.layoutControl1.TabIndex = 3;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -460,7 +460,7 @@
             this.layoutControlGroup3,
             this.layoutControlGroupOrigCam2});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1320, 910);
+            this.Root.Size = new System.Drawing.Size(1320, 730);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem21
@@ -535,7 +535,7 @@
             this.layoutControlItem18});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 34);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(460, 249);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(460, 220);
             this.layoutControlGroup2.Text = "기본정보";
             // 
             // layoutControlItem1
@@ -582,7 +582,7 @@
             this.layoutControlItem19.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem19.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.layoutControlItem19.Control = this.Me_Rk;
-            this.layoutControlItem19.Location = new System.Drawing.Point(0, 151);
+            this.layoutControlItem19.Location = new System.Drawing.Point(0, 122);
             this.layoutControlItem19.MaxSize = new System.Drawing.Size(435, 54);
             this.layoutControlItem19.MinSize = new System.Drawing.Size(435, 54);
             this.layoutControlItem19.Name = "layoutControlItem19";
@@ -624,7 +624,7 @@
             this.layoutControlItem10.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem10.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.layoutControlItem10.Control = this.Tx_Itcod;
-            this.layoutControlItem10.Location = new System.Drawing.Point(218, 62);
+            this.layoutControlItem10.Location = new System.Drawing.Point(0, 93);
             this.layoutControlItem10.MaxSize = new System.Drawing.Size(98, 31);
             this.layoutControlItem10.MinSize = new System.Drawing.Size(98, 29);
             this.layoutControlItem10.Name = "layoutControlItem10";
@@ -640,11 +640,11 @@
             this.layoutControlItem17.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem17.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.layoutControlItem17.Control = this.Tx_Plnnm;
-            this.layoutControlItem17.Location = new System.Drawing.Point(0, 93);
-            this.layoutControlItem17.MaxSize = new System.Drawing.Size(168, 29);
-            this.layoutControlItem17.MinSize = new System.Drawing.Size(148, 29);
+            this.layoutControlItem17.Location = new System.Drawing.Point(218, 62);
+            this.layoutControlItem17.MaxSize = new System.Drawing.Size(218, 31);
+            this.layoutControlItem17.MinSize = new System.Drawing.Size(180, 31);
             this.layoutControlItem17.Name = "layoutControlItem17";
-            this.layoutControlItem17.Size = new System.Drawing.Size(436, 29);
+            this.layoutControlItem17.Size = new System.Drawing.Size(218, 31);
             this.layoutControlItem17.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem17.Text = "작업자명";
             this.layoutControlItem17.TextSize = new System.Drawing.Size(55, 15);
@@ -652,7 +652,7 @@
             // layoutControlItem18
             // 
             this.layoutControlItem18.Control = this.Tx_Plncd;
-            this.layoutControlItem18.Location = new System.Drawing.Point(0, 122);
+            this.layoutControlItem18.Location = new System.Drawing.Point(0, 93);
             this.layoutControlItem18.MaxSize = new System.Drawing.Size(114, 29);
             this.layoutControlItem18.MinSize = new System.Drawing.Size(98, 29);
             this.layoutControlItem18.Name = "layoutControlItem18";
@@ -714,7 +714,7 @@
             this.layoutControlItem22,
             this.layoutControlItem23,
             this.layoutControlItem24});
-            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 283);
+            this.layoutControlGroup5.Location = new System.Drawing.Point(0, 254);
             this.layoutControlGroup5.Name = "layoutControlGroup5";
             this.layoutControlGroup5.Size = new System.Drawing.Size(460, 164);
             this.layoutControlGroup5.Text = "검사정보";
@@ -807,7 +807,7 @@
             this.layoutControlGroup3.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText;
             this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem8});
-            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 447);
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 418);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.Size = new System.Drawing.Size(230, 333);
             this.layoutControlGroup3.Text = "원본이미지(CAM1)";
@@ -829,7 +829,7 @@
             // 
             this.layoutControlGroupOrigCam2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemOrigCam2});
-            this.layoutControlGroupOrigCam2.Location = new System.Drawing.Point(230, 447);
+            this.layoutControlGroupOrigCam2.Location = new System.Drawing.Point(230, 418);
             this.layoutControlGroupOrigCam2.Name = "layoutControlGroupOrigCam2";
             this.layoutControlGroupOrigCam2.Size = new System.Drawing.Size(230, 333);
             this.layoutControlGroupOrigCam2.Text = "원본이미지(CAM2)";
@@ -850,7 +850,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1320, 910);
+            this.ClientSize = new System.Drawing.Size(1320, 730);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CM003F01";
