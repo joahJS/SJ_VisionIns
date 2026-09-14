@@ -676,7 +676,6 @@
             this.layoutControlGroup3.MinSize = new System.Drawing.Size(230, 440);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.Size = new System.Drawing.Size(230, 440);
-            this.layoutControlGroup3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlGroup3.Text = "원본이미지(CAM1)";
             this.layoutControlGroup3.CustomButtonClick += new DevExpress.XtraBars.Docking2010.BaseButtonEventHandler(this.layoutControlGroup3_CustomButtonClick);
             //
@@ -701,7 +700,6 @@
             this.layoutControlGroupOrigCam2.MinSize = new System.Drawing.Size(230, 440);
             this.layoutControlGroupOrigCam2.Name = "layoutControlGroupOrigCam2";
             this.layoutControlGroupOrigCam2.Size = new System.Drawing.Size(230, 440);
-            this.layoutControlGroupOrigCam2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlGroupOrigCam2.Text = "원본이미지(CAM2)";
             //
             // layoutControlItemOrigCam2
@@ -725,7 +723,6 @@
             this.layoutControlGroupDebug.MinSize = new System.Drawing.Size(410, 780);
             this.layoutControlGroupDebug.Name = "layoutControlGroupDebug";
             this.layoutControlGroupDebug.Size = new System.Drawing.Size(410, 780);
-            this.layoutControlGroupDebug.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlGroupDebug.Text = "디버그이미지(CAM1)";
             //
             // layoutControlItemDebug
@@ -749,7 +746,6 @@
             this.layoutControlGroupDebugCam2.MinSize = new System.Drawing.Size(410, 780);
             this.layoutControlGroupDebugCam2.Name = "layoutControlGroupDebugCam2";
             this.layoutControlGroupDebugCam2.Size = new System.Drawing.Size(410, 780);
-            this.layoutControlGroupDebugCam2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlGroupDebugCam2.Text = "디버그이미지(CAM2)";
             //
             // layoutControlItemDebugCam2
