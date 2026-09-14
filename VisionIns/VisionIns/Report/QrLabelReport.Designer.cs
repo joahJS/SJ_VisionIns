@@ -64,7 +64,7 @@ namespace VisionIns
             this.xrLbl_LOTNO_Cap,
             this.xrQrCode});
             this.Detail.Dpi = 254F;
-            this.Detail.HeightF = 245F;
+            this.Detail.HeightF = 250F;
             this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             //
@@ -84,7 +84,7 @@ namespace VisionIns
             //
             this.xrLbl_LOTNO_Cap.Dpi = 254F;
             this.xrLbl_LOTNO_Cap.Font = new System.Drawing.Font("맑은 고딕", 6F);
-            this.xrLbl_LOTNO_Cap.LocationFloat = new DevExpress.Utils.PointFloat(5F, 160F);
+            this.xrLbl_LOTNO_Cap.LocationFloat = new DevExpress.Utils.PointFloat(5F, 165F);
             this.xrLbl_LOTNO_Cap.Name = "xrLbl_LOTNO_Cap";
             this.xrLbl_LOTNO_Cap.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 254F);
             this.xrLbl_LOTNO_Cap.SizeF = new System.Drawing.SizeF(65F, 26F);
@@ -98,7 +98,7 @@ namespace VisionIns
             this.xrLbl_LOTNO.CanGrow = false;
             this.xrLbl_LOTNO.Dpi = 254F;
             this.xrLbl_LOTNO.Font = new System.Drawing.Font("굴림", 8F, System.Drawing.FontStyle.Bold);
-            this.xrLbl_LOTNO.LocationFloat = new DevExpress.Utils.PointFloat(75F, 160F);
+            this.xrLbl_LOTNO.LocationFloat = new DevExpress.Utils.PointFloat(75F, 165F);
             this.xrLbl_LOTNO.Name = "xrLbl_LOTNO";
             this.xrLbl_LOTNO.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 254F);
             this.xrLbl_LOTNO.SizeF = new System.Drawing.SizeF(210F, 26F);
@@ -113,7 +113,7 @@ namespace VisionIns
             //
             this.xrLbl_ITNAM_Cap.Dpi = 254F;
             this.xrLbl_ITNAM_Cap.Font = new System.Drawing.Font("맑은 고딕", 6F);
-            this.xrLbl_ITNAM_Cap.LocationFloat = new DevExpress.Utils.PointFloat(5F, 186F);
+            this.xrLbl_ITNAM_Cap.LocationFloat = new DevExpress.Utils.PointFloat(5F, 191F);
             this.xrLbl_ITNAM_Cap.Name = "xrLbl_ITNAM_Cap";
             this.xrLbl_ITNAM_Cap.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 254F);
             this.xrLbl_ITNAM_Cap.SizeF = new System.Drawing.SizeF(65F, 26F);
@@ -127,7 +127,7 @@ namespace VisionIns
             this.xrLbl_ITNAM.CanGrow = false;
             this.xrLbl_ITNAM.Dpi = 254F;
             this.xrLbl_ITNAM.Font = new System.Drawing.Font("굴림", 7F);
-            this.xrLbl_ITNAM.LocationFloat = new DevExpress.Utils.PointFloat(75F, 186F);
+            this.xrLbl_ITNAM.LocationFloat = new DevExpress.Utils.PointFloat(75F, 191F);
             this.xrLbl_ITNAM.Name = "xrLbl_ITNAM";
             this.xrLbl_ITNAM.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 254F);
             this.xrLbl_ITNAM.SizeF = new System.Drawing.SizeF(210F, 26F);
@@ -142,7 +142,7 @@ namespace VisionIns
             //
             this.xrLbl_ISPEC_Cap.Dpi = 254F;
             this.xrLbl_ISPEC_Cap.Font = new System.Drawing.Font("맑은 고딕", 6F);
-            this.xrLbl_ISPEC_Cap.LocationFloat = new DevExpress.Utils.PointFloat(5F, 212F);
+            this.xrLbl_ISPEC_Cap.LocationFloat = new DevExpress.Utils.PointFloat(5F, 217F);
             this.xrLbl_ISPEC_Cap.Name = "xrLbl_ISPEC_Cap";
             this.xrLbl_ISPEC_Cap.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 254F);
             this.xrLbl_ISPEC_Cap.SizeF = new System.Drawing.SizeF(65F, 26F);
@@ -156,7 +156,7 @@ namespace VisionIns
             this.xrLbl_ISPEC.CanGrow = false;
             this.xrLbl_ISPEC.Dpi = 254F;
             this.xrLbl_ISPEC.Font = new System.Drawing.Font("굴림", 7F);
-            this.xrLbl_ISPEC.LocationFloat = new DevExpress.Utils.PointFloat(75F, 212F);
+            this.xrLbl_ISPEC.LocationFloat = new DevExpress.Utils.PointFloat(75F, 217F);
             this.xrLbl_ISPEC.Name = "xrLbl_ISPEC";
             this.xrLbl_ISPEC.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 254F);
             this.xrLbl_ISPEC.SizeF = new System.Drawing.SizeF(210F, 26F);
