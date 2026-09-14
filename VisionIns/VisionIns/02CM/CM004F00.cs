@@ -111,7 +111,18 @@ namespace VisionIns
 
         private void BtnExcel_Click(object sender, EventArgs e)
         {
-            ComnEtcFunc.ExportExcelFile("바코드출력_", GridRetr, this.Name, this.Text);
+            // CheckBoxRowSelect 모드에서는 엑셀내보내기 시 체크박스 선택 상태가
+            // "Selection" 컬럼으로 함께 출력되므로, 내보내는 동안만 잠시 해제한다.
+            DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode prevMode = GridViewRetr.OptionsSelection.MultiSelectMode;
+            GridViewRetr.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.RowSelect;
+            try
+            {
+                ComnEtcFunc.ExportExcelFile("바코드출력_", GridRetr, this.Name, this.Text);
+            }
+            finally
+            {
+                GridViewRetr.OptionsSelection.MultiSelectMode = prevMode;
+            }
         }
 
         private void BtnClose_Click(object sender, EventArgs e)
