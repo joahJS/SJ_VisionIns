@@ -42,6 +42,18 @@ namespace VisionIns
             _row = row;
         }
 
+        //ESC 키로 닫기
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Escape)
+            {
+                this.Close();
+                return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
         private void LoadInspectionDetail(string inspNo)
         {
             // 여기서 검사번호 기준으로 DB 조회
@@ -67,15 +79,15 @@ namespace VisionIns
         //
         private void SetDetailData(DataRow row)
         {
-            BasicInfoItem1Text.Text = row["INSPCD"].ToString();
-            BasicInfoItem2Text.Text = row["WDATE"].ToString();
-            BasicInfoItem3Text.Text = row["WTIME"].ToString();
+            BasicInfoItem1Text.Text = row["SLINO"].ToString();
+            BasicInfoItem2Text.Text = row["IDATE"].ToString();
+            BasicInfoItem3Text.Text = row["ITIME"].ToString();
             BasicInfoItem4Text.Text = row["ITCOD"].ToString();
-            BasicInfoItem5Text.Text = row["WORKNM"].ToString();
-            BasicInfoItem6Text.Text = row["INSPRSLT"].ToString();
+            BasicInfoItem5Text.Text = row["WKNM"].ToString();
+            BasicInfoItem6Text.Text = row["RSLT"].ToString();
 
             // 판정 색상
-            if (row["INSPRSLT"].ToString() == "OK")
+            if (row["RSLT"].ToString() == "OK")
             {
                 BasicInfoItem6Text.ForeColor = ColorTranslator.FromHtml("#5ED845");
                 lblSumSignal.BackColor = ColorTranslator.FromHtml("#5ED845");
@@ -86,25 +98,30 @@ namespace VisionIns
                 lblSumSignal.BackColor = ColorTranslator.FromHtml("#FF4D45");
             }
 
-            lblSumSignal.Text = row["INSPRSLT"].ToString();
+            lblSumSignal.Text = row["RSLT"].ToString();
 
-            //검사항목 구분(INSP1~INSP5 OK/NG 개수 계산)
+            //검사항목 구분(IITEM1~IITEM5 OK/NG 개수 계산 및 항목별 표시)
             int okCount = 0;
             int ngCount = 0;
 
-            string[] inspColumns = { "INSP1", "INSP2", "INSP3", "INSP4", "INSP5" };
+            string[] inspColumns = { "IITEM1", "IITEM2", "IITEM3", "IITEM4", "IITEM5" };
+            LabelControl[] inspLabels = { lblResultText1, lblResultText2, lblResultText3, lblResultText4, lblResultText5 };
 
-            foreach (string col in inspColumns)
+            for (int i = 0; i < inspColumns.Length; i++)
             {
-                string value = row[col]?.ToString().Trim().ToUpper();
+                string value = row[inspColumns[i]]?.ToString().Trim().ToUpper();
+
+                inspLabels[i].Text = value;
 
                 if (value == "OK")
                 {
                     okCount++;
+                    inspLabels[i].ForeColor = ColorTranslator.FromHtml("#5ED845");
                 }
                 else if (value == "NG")
                 {
                     ngCount++;
+                    inspLabels[i].ForeColor = ColorTranslator.FromHtml("#FF4D45");
                 }
             }
 
@@ -112,12 +129,21 @@ namespace VisionIns
             lblSumValue1.Text = ngCount.ToString();
             lblSumValue2.Text = okCount.ToString();
 
-            // 검사항목 표시 예시
-            lblResultText1.Text = row["INSP1"].ToString();
-            lblResultText2.Text = row["INSP2"].ToString();
-            lblResultText3.Text = row["INSP3"].ToString();
-            lblResultText4.Text = row["INSP4"].ToString();
-            lblResultText5.Text = row["INSP5"].ToString();
+            // 검사이미지
+            byte[] imgBytes = row["IIMG"] as byte[];
+
+            if (imgBytes != null && imgBytes.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(imgBytes))
+                using (Image img = Image.FromStream(ms))
+                {
+                    picLiveImage.Image = new Bitmap(img);
+                }
+            }
+            else
+            {
+                picLiveImage.Image = null;
+            }
         }
 
         private void BtnClose_Click(object sender, EventArgs e)

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.IO;
+using Newtonsoft.Json.Linq;
 
 namespace VisionIns
 {
@@ -62,26 +63,59 @@ namespace VisionIns
             Dictionary<string, string> dicParams = new Dictionary<string, string>();
             dicParams.Clear();
             dicParams.Add("CMD", "INFO_BOUND");
-            dicParams.Add("SLINO", _SLINO);
+            dicParams.Add("ID", _SLINO);
             DataTable dt = DBConn.GetDataTable(DBConn.dbCon, PROCEDURE_ID, dicParams);
 
-            Tx_Slino.EditValue = dt.Rows[0]["SLINO"]?.ToString();
-            Dt_IDate.EditValue = dt.Rows[0]["IDATE"]?.ToString();
-            Te_ITime.EditValue = dt.Rows[0]["ITIME"]?.ToString();
-            Be_Itnam.EditValue = dt.Rows[0]["ITNAM"]?.ToString();
-            Tx_Itcod.EditValue = dt.Rows[0]["ITCOD"]?.ToString();
-            Tx_Plnnm.EditValue = dt.Rows[0]["WKNM"]?.ToString();
-            Tx_Plncd.EditValue = dt.Rows[0]["PLNCD"]?.ToString();
-            Rg_Rslt.EditValue = dt.Rows[0]["RSLT"]?.ToString();
-            Cb_Iitem1.SelectedItem = dt.Rows[0]["IITEM1"]?.ToString();
-            Cb_Iitem2.SelectedItem = dt.Rows[0]["IITEM2"]?.ToString();
-            Cb_Iitem3.SelectedItem = dt.Rows[0]["IITEM3"]?.ToString();
-            Cb_Iitem4.SelectedItem = dt.Rows[0]["IITEM4"]?.ToString();
-            Cb_Iitem5.SelectedItem = dt.Rows[0]["IITEM5"]?.ToString();
-            Me_Rk.EditValue = dt.Rows[0]["RK"]?.ToString();
+            //T_0001H(AI 비전검사 결과) 기준 매핑 - INSP_HIST 전용이던 IDATE/ITIME/ITCOD/WKNM/PLNCD/IITEM1~5/RK는
+            //이 테이블에 존재하지 않아 남겨두면 SetDetailData처럼 예외가 나므로 실제 컬럼으로 교체
+            Tx_Slino.EditValue = dt.Rows[0]["ID"]?.ToString();
 
-            byte[] Img = Convert.IsDBNull(dt.Rows[0]["IIMG"]) ? null : (byte[])dt.Rows[0]["IIMG"];
-            Pic_Iimg.Image = byteArrayToImage(Img);
+            DateTime ts;
+            if (DateTime.TryParse(dt.Rows[0]["TIMESTAMP"]?.ToString(), out ts))
+            {
+                Dt_IDate.EditValue = ts.ToString("yyyy-MM-dd");
+                Te_ITime.EditValue = ts;
+            }
+
+            Tx_Itcod.EditValue = dt.Rows[0]["CAMERA_ID"]?.ToString();
+            Rg_Rslt.EditValue = dt.Rows[0]["RSLT"]?.ToString();
+
+            //검사항목1~5는 고정 5항목 개념이 없어 사용하지 않음(부품/캡 단위 결과는 RESULT_JSON 참고)
+            Cb_Iitem1.EditValue = "";
+            Cb_Iitem2.EditValue = "";
+            Cb_Iitem3.EditValue = "";
+            Cb_Iitem4.EditValue = "";
+            Cb_Iitem5.EditValue = "";
+
+            Tx_Plnnm.EditValue = "";
+            Tx_Plncd.EditValue = "";
+
+            string resultJson = dt.Rows[0]["RESULT_JSON"]?.ToString();
+            string partType = "";
+
+            if (!string.IsNullOrEmpty(resultJson))
+            {
+                try
+                {
+                    JObject resultObj = JObject.Parse(resultJson);
+                    partType = resultObj["part_type"]?.ToString();
+                }
+                catch
+                {
+                    //RESULT_JSON 형식이 예상과 다른 경우 무시
+                }
+            }
+
+            Be_Itnam.EditValue = partType;
+
+            Me_Rk.EditValue = string.Format("부품개수 {0} / 캡개수 {1} / 불량개수 {2} / 처리시간 {3}ms",
+                dt.Rows[0]["PART_COUNT"], dt.Rows[0]["TOTAL_CAPS"], dt.Rows[0]["TOTAL_DEFECTS"], dt.Rows[0]["PROCESSING_TIME_MS"]);
+
+            byte[] uploadedImg = Convert.IsDBNull(dt.Rows[0]["UPLOADED_IMAGE"]) ? null : (byte[])dt.Rows[0]["UPLOADED_IMAGE"];
+            Pic_Iimg.Image = byteArrayToImage(uploadedImg);
+
+            byte[] debugImg = Convert.IsDBNull(dt.Rows[0]["DEBUG_IMAGE"]) ? null : (byte[])dt.Rows[0]["DEBUG_IMAGE"];
+            Pic_DebugImg.Image = byteArrayToImage(debugImg);
         }
 
         private Image byteArrayToImage(byte[] byteArrayIn)

@@ -207,8 +207,8 @@
             this.pnlRoot.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlRoot.Location = new System.Drawing.Point(0, 0);
             this.pnlRoot.Name = "pnlRoot";
-            this.pnlRoot.Padding = new System.Windows.Forms.Padding(8);
-            this.pnlRoot.Size = new System.Drawing.Size(1910, 1008);
+            this.pnlRoot.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.pnlRoot.Size = new System.Drawing.Size(1910, 1080);
             this.pnlRoot.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -220,13 +220,13 @@
             this.tableLayoutPanel2.Controls.Add(this.pnlBody, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(8, 8);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(8, 9);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1894, 992);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1894, 1062);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // pnlHeader
@@ -242,10 +242,10 @@
             this.pnlHeader.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.pnlHeader.LookAndFeel.UseDefaultLookAndFeel = false;
             this.pnlHeader.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlHeader.MaximumSize = new System.Drawing.Size(0, 86);
+            this.pnlHeader.MaximumSize = new System.Drawing.Size(0, 92);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Padding = new System.Windows.Forms.Padding(50, 10, 20, 10);
-            this.pnlHeader.Size = new System.Drawing.Size(1894, 86);
+            this.pnlHeader.Padding = new System.Windows.Forms.Padding(50, 11, 20, 11);
+            this.pnlHeader.Size = new System.Drawing.Size(1894, 92);
             this.pnlHeader.TabIndex = 5;
             // 
             // pnlTimeBox
@@ -254,10 +254,10 @@
             this.pnlTimeBox.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pnlTimeBox.Controls.Add(this.tableLayoutPanel1);
             this.pnlTimeBox.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlTimeBox.Location = new System.Drawing.Point(1371, 13);
+            this.pnlTimeBox.Location = new System.Drawing.Point(1371, 14);
             this.pnlTimeBox.Margin = new System.Windows.Forms.Padding(0);
             this.pnlTimeBox.Name = "pnlTimeBox";
-            this.pnlTimeBox.Size = new System.Drawing.Size(500, 60);
+            this.pnlTimeBox.Size = new System.Drawing.Size(500, 64);
             this.pnlTimeBox.TabIndex = 3;
             // 
             // tableLayoutPanel1
@@ -274,7 +274,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(500, 60);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(500, 64);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // Lb_CTIME
@@ -321,7 +321,7 @@
             this.btnCloseWrap.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.btnCloseWrap.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btnCloseWrap.Name = "btnCloseWrap";
-            this.btnCloseWrap.Size = new System.Drawing.Size(58, 54);
+            this.btnCloseWrap.Size = new System.Drawing.Size(58, 58);
             this.btnCloseWrap.TabIndex = 6;
             // 
             // btnClose
@@ -331,7 +331,7 @@
             this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnClose.Location = new System.Drawing.Point(3, 3);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(52, 48);
+            this.btnClose.Size = new System.Drawing.Size(52, 52);
             this.btnClose.TabIndex = 0;
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -345,7 +345,7 @@
             this.labelControl1.Appearance.Options.UseTextOptions = true;
             this.labelControl1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelControl1.Location = new System.Drawing.Point(53, 13);
+            this.labelControl1.Location = new System.Drawing.Point(53, 14);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(261, 59);
             this.labelControl1.TabIndex = 1;
@@ -355,11 +355,11 @@
             // 
             this.pnlBody.Controls.Add(this.pnlContentWrap);
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBody.Location = new System.Drawing.Point(0, 86);
+            this.pnlBody.Location = new System.Drawing.Point(0, 92);
             this.pnlBody.Margin = new System.Windows.Forms.Padding(0);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.pnlBody.Size = new System.Drawing.Size(1894, 906);
+            this.pnlBody.Padding = new System.Windows.Forms.Padding(0, 11, 0, 0);
+            this.pnlBody.Size = new System.Drawing.Size(1894, 970);
             this.pnlBody.TabIndex = 6;
             // 
             // pnlContentWrap
@@ -370,11 +370,11 @@
             this.pnlContentWrap.Appearance.Options.UseBorderColor = true;
             this.pnlContentWrap.Controls.Add(this.tblContent);
             this.pnlContentWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContentWrap.Location = new System.Drawing.Point(0, 10);
+            this.pnlContentWrap.Location = new System.Drawing.Point(0, 11);
             this.pnlContentWrap.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this.pnlContentWrap.LookAndFeel.UseDefaultLookAndFeel = false;
             this.pnlContentWrap.Name = "pnlContentWrap";
-            this.pnlContentWrap.Size = new System.Drawing.Size(1894, 896);
+            this.pnlContentWrap.Size = new System.Drawing.Size(1894, 959);
             this.pnlContentWrap.TabIndex = 0;
             // 
             // tblContent
@@ -387,9 +387,9 @@
             this.tblContent.Location = new System.Drawing.Point(3, 3);
             this.tblContent.Name = "tblContent";
             this.tblContent.RowCount = 2;
-            this.tblContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tblContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tblContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblContent.Size = new System.Drawing.Size(1888, 890);
+            this.tblContent.Size = new System.Drawing.Size(1888, 953);
             this.tblContent.TabIndex = 0;
             // 
             // tblContentHeader
@@ -401,7 +401,7 @@
             this.tblContentHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.tblContentHeader.Location = new System.Drawing.Point(3, 3);
             this.tblContentHeader.Name = "tblContentHeader";
-            this.tblContentHeader.Size = new System.Drawing.Size(1882, 49);
+            this.tblContentHeader.Size = new System.Drawing.Size(1882, 52);
             this.tblContentHeader.TabIndex = 1;
             // 
             // labelControl2
@@ -410,7 +410,7 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(15, 8);
+            this.labelControl2.Location = new System.Drawing.Point(15, 9);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(197, 32);
             this.labelControl2.TabIndex = 0;
@@ -423,12 +423,12 @@
             this.tblContentBody.Controls.Add(this.SubTitleWrap, 0, 0);
             this.tblContentBody.Controls.Add(this.QRListWrap, 0, 1);
             this.tblContentBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblContentBody.Location = new System.Drawing.Point(3, 58);
+            this.tblContentBody.Location = new System.Drawing.Point(3, 62);
             this.tblContentBody.Name = "tblContentBody";
             this.tblContentBody.RowCount = 2;
-            this.tblContentBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tblContentBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tblContentBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblContentBody.Size = new System.Drawing.Size(1882, 829);
+            this.tblContentBody.Size = new System.Drawing.Size(1882, 888);
             this.tblContentBody.TabIndex = 2;
             // 
             // SubTitleWrap
@@ -443,7 +443,7 @@
             this.SubTitleWrap.Name = "SubTitleWrap";
             this.SubTitleWrap.RowCount = 1;
             this.SubTitleWrap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.SubTitleWrap.Size = new System.Drawing.Size(1876, 49);
+            this.SubTitleWrap.Size = new System.Drawing.Size(1876, 53);
             this.SubTitleWrap.TabIndex = 0;
             // 
             // lblSubTitle
@@ -458,7 +458,7 @@
             this.lblSubTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblSubTitle.Location = new System.Drawing.Point(628, 3);
             this.lblSubTitle.Name = "lblSubTitle";
-            this.lblSubTitle.Size = new System.Drawing.Size(619, 43);
+            this.lblSubTitle.Size = new System.Drawing.Size(619, 47);
             this.lblSubTitle.TabIndex = 0;
             this.lblSubTitle.Text = "QR 스캔 (최대 10개)";
             // 
@@ -481,14 +481,14 @@
             this.QRListWrap.Controls.Add(this.QRItem2Wrap, 1, 0);
             this.QRListWrap.Controls.Add(this.QRItem1Wrap, 0, 0);
             this.QRListWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRListWrap.Location = new System.Drawing.Point(3, 58);
+            this.QRListWrap.Location = new System.Drawing.Point(3, 62);
             this.QRListWrap.Name = "QRListWrap";
             this.QRListWrap.RowCount = 2;
             this.QRListWrap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.QRListWrap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRListWrap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRListWrap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRListWrap.Size = new System.Drawing.Size(1876, 768);
+            this.QRListWrap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRListWrap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRListWrap.Size = new System.Drawing.Size(1876, 823);
             this.QRListWrap.TabIndex = 1;
             // 
             // QRItem10Wrap
@@ -496,10 +496,10 @@
             this.QRItem10Wrap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(41)))));
             this.QRItem10Wrap.Controls.Add(this.QRItem10);
             this.QRItem10Wrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem10Wrap.Location = new System.Drawing.Point(1505, 389);
+            this.QRItem10Wrap.Location = new System.Drawing.Point(1505, 416);
             this.QRItem10Wrap.Margin = new System.Windows.Forms.Padding(5);
             this.QRItem10Wrap.Name = "QRItem10Wrap";
-            this.QRItem10Wrap.Size = new System.Drawing.Size(366, 374);
+            this.QRItem10Wrap.Size = new System.Drawing.Size(366, 402);
             this.QRItem10Wrap.TabIndex = 9;
             // 
             // QRItem10
@@ -517,14 +517,14 @@
             this.QRItem10.Location = new System.Drawing.Point(0, 0);
             this.QRItem10.Name = "QRItem10";
             this.QRItem10.RowCount = 6;
-            this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem10.Size = new System.Drawing.Size(366, 374);
+            this.QRItem10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem10.Size = new System.Drawing.Size(366, 402);
             this.QRItem10.TabIndex = 0;
             // 
             // pictureEdit10
@@ -539,7 +539,7 @@
             this.pictureEdit10.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit10.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit10.Size = new System.Drawing.Size(80, 40);
+            this.pictureEdit10.Size = new System.Drawing.Size(80, 43);
             this.pictureEdit10.TabIndex = 0;
             // 
             // QRItem10LabelWrap
@@ -548,10 +548,10 @@
             this.QRItem10.SetColumnSpan(this.QRItem10LabelWrap, 3);
             this.QRItem10LabelWrap.Controls.Add(this.QRITEM10CODE);
             this.QRItem10LabelWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem10LabelWrap.Location = new System.Drawing.Point(20, 267);
+            this.QRItem10LabelWrap.Location = new System.Drawing.Point(20, 287);
             this.QRItem10LabelWrap.Margin = new System.Windows.Forms.Padding(0);
             this.QRItem10LabelWrap.Name = "QRItem10LabelWrap";
-            this.QRItem10LabelWrap.Size = new System.Drawing.Size(324, 55);
+            this.QRItem10LabelWrap.Size = new System.Drawing.Size(324, 59);
             this.QRItem10LabelWrap.TabIndex = 2;
             // 
             // QRITEM10CODE
@@ -567,7 +567,7 @@
             this.QRITEM10CODE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QRITEM10CODE.Location = new System.Drawing.Point(0, 0);
             this.QRITEM10CODE.Name = "QRITEM10CODE";
-            this.QRITEM10CODE.Size = new System.Drawing.Size(324, 55);
+            this.QRITEM10CODE.Size = new System.Drawing.Size(324, 59);
             this.QRITEM10CODE.TabIndex = 0;
             this.QRITEM10CODE.Text = "A1234";
             // 
@@ -576,11 +576,11 @@
             this.QRItem10ImgWrap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.QRItem10ImgWrap.BackColor = System.Drawing.Color.Transparent;
             this.QRItem10ImgWrap.Controls.Add(this.QRItem10Img);
-            this.QRItem10ImgWrap.Location = new System.Drawing.Point(110, 100);
-            this.QRItem10ImgWrap.MaximumSize = new System.Drawing.Size(144, 144);
-            this.QRItem10ImgWrap.MinimumSize = new System.Drawing.Size(144, 144);
+            this.QRItem10ImgWrap.Location = new System.Drawing.Point(110, 108);
+            this.QRItem10ImgWrap.MaximumSize = new System.Drawing.Size(144, 154);
+            this.QRItem10ImgWrap.MinimumSize = new System.Drawing.Size(144, 154);
             this.QRItem10ImgWrap.Name = "QRItem10ImgWrap";
-            this.QRItem10ImgWrap.Size = new System.Drawing.Size(144, 144);
+            this.QRItem10ImgWrap.Size = new System.Drawing.Size(144, 154);
             this.QRItem10ImgWrap.TabIndex = 3;
             // 
             // QRItem10Img
@@ -590,7 +590,7 @@
             this.QRItem10Img.Name = "QRItem10Img";
             this.QRItem10Img.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.QRItem10Img.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.QRItem10Img.Size = new System.Drawing.Size(144, 144);
+            this.QRItem10Img.Size = new System.Drawing.Size(144, 154);
             this.QRItem10Img.TabIndex = 1;
             // 
             // QRItem9Wrap
@@ -598,10 +598,10 @@
             this.QRItem9Wrap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(41)))));
             this.QRItem9Wrap.Controls.Add(this.QRItem9);
             this.QRItem9Wrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem9Wrap.Location = new System.Drawing.Point(1130, 389);
+            this.QRItem9Wrap.Location = new System.Drawing.Point(1130, 416);
             this.QRItem9Wrap.Margin = new System.Windows.Forms.Padding(5);
             this.QRItem9Wrap.Name = "QRItem9Wrap";
-            this.QRItem9Wrap.Size = new System.Drawing.Size(365, 374);
+            this.QRItem9Wrap.Size = new System.Drawing.Size(365, 402);
             this.QRItem9Wrap.TabIndex = 8;
             // 
             // QRItem9
@@ -619,14 +619,14 @@
             this.QRItem9.Location = new System.Drawing.Point(0, 0);
             this.QRItem9.Name = "QRItem9";
             this.QRItem9.RowCount = 6;
-            this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem9.Size = new System.Drawing.Size(365, 374);
+            this.QRItem9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem9.Size = new System.Drawing.Size(365, 402);
             this.QRItem9.TabIndex = 0;
             // 
             // pictureEdit9
@@ -641,7 +641,7 @@
             this.pictureEdit9.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit9.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit9.Size = new System.Drawing.Size(80, 40);
+            this.pictureEdit9.Size = new System.Drawing.Size(80, 43);
             this.pictureEdit9.TabIndex = 0;
             // 
             // QRItem9LabelWrap
@@ -650,10 +650,10 @@
             this.QRItem9.SetColumnSpan(this.QRItem9LabelWrap, 3);
             this.QRItem9LabelWrap.Controls.Add(this.QRITEM9CODE);
             this.QRItem9LabelWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem9LabelWrap.Location = new System.Drawing.Point(20, 267);
+            this.QRItem9LabelWrap.Location = new System.Drawing.Point(20, 287);
             this.QRItem9LabelWrap.Margin = new System.Windows.Forms.Padding(0);
             this.QRItem9LabelWrap.Name = "QRItem9LabelWrap";
-            this.QRItem9LabelWrap.Size = new System.Drawing.Size(324, 55);
+            this.QRItem9LabelWrap.Size = new System.Drawing.Size(324, 59);
             this.QRItem9LabelWrap.TabIndex = 2;
             // 
             // QRITEM9CODE
@@ -669,7 +669,7 @@
             this.QRITEM9CODE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QRITEM9CODE.Location = new System.Drawing.Point(0, 0);
             this.QRITEM9CODE.Name = "QRITEM9CODE";
-            this.QRITEM9CODE.Size = new System.Drawing.Size(324, 55);
+            this.QRITEM9CODE.Size = new System.Drawing.Size(324, 59);
             this.QRITEM9CODE.TabIndex = 0;
             this.QRITEM9CODE.Text = "A1234";
             // 
@@ -678,11 +678,11 @@
             this.QRItem9ImgWrap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.QRItem9ImgWrap.BackColor = System.Drawing.Color.Transparent;
             this.QRItem9ImgWrap.Controls.Add(this.QRItem9Img);
-            this.QRItem9ImgWrap.Location = new System.Drawing.Point(110, 100);
-            this.QRItem9ImgWrap.MaximumSize = new System.Drawing.Size(144, 144);
-            this.QRItem9ImgWrap.MinimumSize = new System.Drawing.Size(144, 144);
+            this.QRItem9ImgWrap.Location = new System.Drawing.Point(110, 108);
+            this.QRItem9ImgWrap.MaximumSize = new System.Drawing.Size(144, 154);
+            this.QRItem9ImgWrap.MinimumSize = new System.Drawing.Size(144, 154);
             this.QRItem9ImgWrap.Name = "QRItem9ImgWrap";
-            this.QRItem9ImgWrap.Size = new System.Drawing.Size(144, 144);
+            this.QRItem9ImgWrap.Size = new System.Drawing.Size(144, 154);
             this.QRItem9ImgWrap.TabIndex = 3;
             // 
             // QRItem9Img
@@ -692,7 +692,7 @@
             this.QRItem9Img.Name = "QRItem9Img";
             this.QRItem9Img.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.QRItem9Img.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.QRItem9Img.Size = new System.Drawing.Size(144, 144);
+            this.QRItem9Img.Size = new System.Drawing.Size(144, 154);
             this.QRItem9Img.TabIndex = 1;
             // 
             // QRItem8Wrap
@@ -700,10 +700,10 @@
             this.QRItem8Wrap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(41)))));
             this.QRItem8Wrap.Controls.Add(this.QRItem8);
             this.QRItem8Wrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem8Wrap.Location = new System.Drawing.Point(755, 389);
+            this.QRItem8Wrap.Location = new System.Drawing.Point(755, 416);
             this.QRItem8Wrap.Margin = new System.Windows.Forms.Padding(5);
             this.QRItem8Wrap.Name = "QRItem8Wrap";
-            this.QRItem8Wrap.Size = new System.Drawing.Size(365, 374);
+            this.QRItem8Wrap.Size = new System.Drawing.Size(365, 402);
             this.QRItem8Wrap.TabIndex = 7;
             // 
             // QRItem8
@@ -721,14 +721,14 @@
             this.QRItem8.Location = new System.Drawing.Point(0, 0);
             this.QRItem8.Name = "QRItem8";
             this.QRItem8.RowCount = 6;
-            this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem8.Size = new System.Drawing.Size(365, 374);
+            this.QRItem8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem8.Size = new System.Drawing.Size(365, 402);
             this.QRItem8.TabIndex = 0;
             // 
             // pictureEdit8
@@ -743,7 +743,7 @@
             this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit8.Size = new System.Drawing.Size(80, 40);
+            this.pictureEdit8.Size = new System.Drawing.Size(80, 43);
             this.pictureEdit8.TabIndex = 0;
             // 
             // QRItem8LabelWrap
@@ -752,10 +752,10 @@
             this.QRItem8.SetColumnSpan(this.QRItem8LabelWrap, 3);
             this.QRItem8LabelWrap.Controls.Add(this.QRITEM8CODE);
             this.QRItem8LabelWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem8LabelWrap.Location = new System.Drawing.Point(20, 267);
+            this.QRItem8LabelWrap.Location = new System.Drawing.Point(20, 287);
             this.QRItem8LabelWrap.Margin = new System.Windows.Forms.Padding(0);
             this.QRItem8LabelWrap.Name = "QRItem8LabelWrap";
-            this.QRItem8LabelWrap.Size = new System.Drawing.Size(324, 55);
+            this.QRItem8LabelWrap.Size = new System.Drawing.Size(324, 59);
             this.QRItem8LabelWrap.TabIndex = 2;
             // 
             // QRITEM8CODE
@@ -771,7 +771,7 @@
             this.QRITEM8CODE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QRITEM8CODE.Location = new System.Drawing.Point(0, 0);
             this.QRITEM8CODE.Name = "QRITEM8CODE";
-            this.QRITEM8CODE.Size = new System.Drawing.Size(324, 55);
+            this.QRITEM8CODE.Size = new System.Drawing.Size(324, 59);
             this.QRITEM8CODE.TabIndex = 0;
             this.QRITEM8CODE.Text = "A1234";
             // 
@@ -780,11 +780,11 @@
             this.QRItem8ImgWrap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.QRItem8ImgWrap.BackColor = System.Drawing.Color.Transparent;
             this.QRItem8ImgWrap.Controls.Add(this.QRItem8Img);
-            this.QRItem8ImgWrap.Location = new System.Drawing.Point(110, 100);
-            this.QRItem8ImgWrap.MaximumSize = new System.Drawing.Size(144, 144);
-            this.QRItem8ImgWrap.MinimumSize = new System.Drawing.Size(144, 144);
+            this.QRItem8ImgWrap.Location = new System.Drawing.Point(110, 108);
+            this.QRItem8ImgWrap.MaximumSize = new System.Drawing.Size(144, 154);
+            this.QRItem8ImgWrap.MinimumSize = new System.Drawing.Size(144, 154);
             this.QRItem8ImgWrap.Name = "QRItem8ImgWrap";
-            this.QRItem8ImgWrap.Size = new System.Drawing.Size(144, 144);
+            this.QRItem8ImgWrap.Size = new System.Drawing.Size(144, 154);
             this.QRItem8ImgWrap.TabIndex = 3;
             // 
             // QRItem8Img
@@ -794,7 +794,7 @@
             this.QRItem8Img.Name = "QRItem8Img";
             this.QRItem8Img.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.QRItem8Img.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.QRItem8Img.Size = new System.Drawing.Size(144, 144);
+            this.QRItem8Img.Size = new System.Drawing.Size(144, 154);
             this.QRItem8Img.TabIndex = 1;
             // 
             // QRItem7Wrap
@@ -802,10 +802,10 @@
             this.QRItem7Wrap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(41)))));
             this.QRItem7Wrap.Controls.Add(this.QRItem7);
             this.QRItem7Wrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem7Wrap.Location = new System.Drawing.Point(380, 389);
+            this.QRItem7Wrap.Location = new System.Drawing.Point(380, 416);
             this.QRItem7Wrap.Margin = new System.Windows.Forms.Padding(5);
             this.QRItem7Wrap.Name = "QRItem7Wrap";
-            this.QRItem7Wrap.Size = new System.Drawing.Size(365, 374);
+            this.QRItem7Wrap.Size = new System.Drawing.Size(365, 402);
             this.QRItem7Wrap.TabIndex = 6;
             // 
             // QRItem7
@@ -823,14 +823,14 @@
             this.QRItem7.Location = new System.Drawing.Point(0, 0);
             this.QRItem7.Name = "QRItem7";
             this.QRItem7.RowCount = 6;
-            this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem7.Size = new System.Drawing.Size(365, 374);
+            this.QRItem7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem7.Size = new System.Drawing.Size(365, 402);
             this.QRItem7.TabIndex = 0;
             // 
             // pictureEdit7
@@ -845,7 +845,7 @@
             this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit7.Size = new System.Drawing.Size(80, 40);
+            this.pictureEdit7.Size = new System.Drawing.Size(80, 43);
             this.pictureEdit7.TabIndex = 0;
             // 
             // QRItem7LabelWrap
@@ -854,10 +854,10 @@
             this.QRItem7.SetColumnSpan(this.QRItem7LabelWrap, 3);
             this.QRItem7LabelWrap.Controls.Add(this.QRITEM7CODE);
             this.QRItem7LabelWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem7LabelWrap.Location = new System.Drawing.Point(20, 267);
+            this.QRItem7LabelWrap.Location = new System.Drawing.Point(20, 287);
             this.QRItem7LabelWrap.Margin = new System.Windows.Forms.Padding(0);
             this.QRItem7LabelWrap.Name = "QRItem7LabelWrap";
-            this.QRItem7LabelWrap.Size = new System.Drawing.Size(324, 55);
+            this.QRItem7LabelWrap.Size = new System.Drawing.Size(324, 59);
             this.QRItem7LabelWrap.TabIndex = 2;
             // 
             // QRITEM7CODE
@@ -873,7 +873,7 @@
             this.QRITEM7CODE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QRITEM7CODE.Location = new System.Drawing.Point(0, 0);
             this.QRITEM7CODE.Name = "QRITEM7CODE";
-            this.QRITEM7CODE.Size = new System.Drawing.Size(324, 55);
+            this.QRITEM7CODE.Size = new System.Drawing.Size(324, 59);
             this.QRITEM7CODE.TabIndex = 0;
             this.QRITEM7CODE.Text = "A1234";
             // 
@@ -882,11 +882,11 @@
             this.QRItem7ImgWrap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.QRItem7ImgWrap.BackColor = System.Drawing.Color.Transparent;
             this.QRItem7ImgWrap.Controls.Add(this.QRItem7Img);
-            this.QRItem7ImgWrap.Location = new System.Drawing.Point(110, 100);
-            this.QRItem7ImgWrap.MaximumSize = new System.Drawing.Size(144, 144);
-            this.QRItem7ImgWrap.MinimumSize = new System.Drawing.Size(144, 144);
+            this.QRItem7ImgWrap.Location = new System.Drawing.Point(110, 108);
+            this.QRItem7ImgWrap.MaximumSize = new System.Drawing.Size(144, 154);
+            this.QRItem7ImgWrap.MinimumSize = new System.Drawing.Size(144, 154);
             this.QRItem7ImgWrap.Name = "QRItem7ImgWrap";
-            this.QRItem7ImgWrap.Size = new System.Drawing.Size(144, 144);
+            this.QRItem7ImgWrap.Size = new System.Drawing.Size(144, 154);
             this.QRItem7ImgWrap.TabIndex = 3;
             // 
             // QRItem7Img
@@ -896,7 +896,7 @@
             this.QRItem7Img.Name = "QRItem7Img";
             this.QRItem7Img.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.QRItem7Img.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.QRItem7Img.Size = new System.Drawing.Size(144, 144);
+            this.QRItem7Img.Size = new System.Drawing.Size(144, 154);
             this.QRItem7Img.TabIndex = 1;
             // 
             // QRItem6Wrap
@@ -904,10 +904,10 @@
             this.QRItem6Wrap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(30)))), ((int)(((byte)(41)))));
             this.QRItem6Wrap.Controls.Add(this.QRItem6);
             this.QRItem6Wrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem6Wrap.Location = new System.Drawing.Point(5, 389);
+            this.QRItem6Wrap.Location = new System.Drawing.Point(5, 416);
             this.QRItem6Wrap.Margin = new System.Windows.Forms.Padding(5);
             this.QRItem6Wrap.Name = "QRItem6Wrap";
-            this.QRItem6Wrap.Size = new System.Drawing.Size(365, 374);
+            this.QRItem6Wrap.Size = new System.Drawing.Size(365, 402);
             this.QRItem6Wrap.TabIndex = 5;
             // 
             // QRItem6
@@ -925,14 +925,14 @@
             this.QRItem6.Location = new System.Drawing.Point(0, 0);
             this.QRItem6.Name = "QRItem6";
             this.QRItem6.RowCount = 6;
-            this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem6.Size = new System.Drawing.Size(365, 374);
+            this.QRItem6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem6.Size = new System.Drawing.Size(365, 402);
             this.QRItem6.TabIndex = 0;
             // 
             // pictureEdit6
@@ -947,7 +947,7 @@
             this.pictureEdit6.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit6.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit6.Size = new System.Drawing.Size(80, 40);
+            this.pictureEdit6.Size = new System.Drawing.Size(80, 43);
             this.pictureEdit6.TabIndex = 0;
             // 
             // QRItem6LabelWrap
@@ -956,10 +956,10 @@
             this.QRItem6.SetColumnSpan(this.QRItem6LabelWrap, 3);
             this.QRItem6LabelWrap.Controls.Add(this.QRITEM6CODE);
             this.QRItem6LabelWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem6LabelWrap.Location = new System.Drawing.Point(20, 267);
+            this.QRItem6LabelWrap.Location = new System.Drawing.Point(20, 287);
             this.QRItem6LabelWrap.Margin = new System.Windows.Forms.Padding(0);
             this.QRItem6LabelWrap.Name = "QRItem6LabelWrap";
-            this.QRItem6LabelWrap.Size = new System.Drawing.Size(324, 55);
+            this.QRItem6LabelWrap.Size = new System.Drawing.Size(324, 59);
             this.QRItem6LabelWrap.TabIndex = 2;
             // 
             // QRITEM6CODE
@@ -975,7 +975,7 @@
             this.QRITEM6CODE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QRITEM6CODE.Location = new System.Drawing.Point(0, 0);
             this.QRITEM6CODE.Name = "QRITEM6CODE";
-            this.QRITEM6CODE.Size = new System.Drawing.Size(324, 55);
+            this.QRITEM6CODE.Size = new System.Drawing.Size(324, 59);
             this.QRITEM6CODE.TabIndex = 0;
             this.QRITEM6CODE.Text = "A1234";
             // 
@@ -984,11 +984,11 @@
             this.QRItem6ImgWrap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.QRItem6ImgWrap.BackColor = System.Drawing.Color.Transparent;
             this.QRItem6ImgWrap.Controls.Add(this.QRItem6Img);
-            this.QRItem6ImgWrap.Location = new System.Drawing.Point(110, 100);
-            this.QRItem6ImgWrap.MaximumSize = new System.Drawing.Size(144, 144);
-            this.QRItem6ImgWrap.MinimumSize = new System.Drawing.Size(144, 144);
+            this.QRItem6ImgWrap.Location = new System.Drawing.Point(110, 108);
+            this.QRItem6ImgWrap.MaximumSize = new System.Drawing.Size(144, 154);
+            this.QRItem6ImgWrap.MinimumSize = new System.Drawing.Size(144, 154);
             this.QRItem6ImgWrap.Name = "QRItem6ImgWrap";
-            this.QRItem6ImgWrap.Size = new System.Drawing.Size(144, 144);
+            this.QRItem6ImgWrap.Size = new System.Drawing.Size(144, 154);
             this.QRItem6ImgWrap.TabIndex = 3;
             // 
             // QRItem6Img
@@ -998,7 +998,7 @@
             this.QRItem6Img.Name = "QRItem6Img";
             this.QRItem6Img.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.QRItem6Img.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.QRItem6Img.Size = new System.Drawing.Size(144, 144);
+            this.QRItem6Img.Size = new System.Drawing.Size(144, 154);
             this.QRItem6Img.TabIndex = 1;
             // 
             // QRItem5Wrap
@@ -1009,7 +1009,7 @@
             this.QRItem5Wrap.Location = new System.Drawing.Point(1505, 5);
             this.QRItem5Wrap.Margin = new System.Windows.Forms.Padding(5);
             this.QRItem5Wrap.Name = "QRItem5Wrap";
-            this.QRItem5Wrap.Size = new System.Drawing.Size(366, 374);
+            this.QRItem5Wrap.Size = new System.Drawing.Size(366, 401);
             this.QRItem5Wrap.TabIndex = 4;
             // 
             // QRItem5
@@ -1027,14 +1027,14 @@
             this.QRItem5.Location = new System.Drawing.Point(0, 0);
             this.QRItem5.Name = "QRItem5";
             this.QRItem5.RowCount = 6;
-            this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem5.Size = new System.Drawing.Size(366, 374);
+            this.QRItem5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem5.Size = new System.Drawing.Size(366, 401);
             this.QRItem5.TabIndex = 0;
             // 
             // pictureEdit5
@@ -1049,7 +1049,7 @@
             this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit5.Size = new System.Drawing.Size(80, 40);
+            this.pictureEdit5.Size = new System.Drawing.Size(80, 43);
             this.pictureEdit5.TabIndex = 0;
             // 
             // QRItem5LabelWrap
@@ -1058,10 +1058,10 @@
             this.QRItem5.SetColumnSpan(this.QRItem5LabelWrap, 3);
             this.QRItem5LabelWrap.Controls.Add(this.QRITEM5CODE);
             this.QRItem5LabelWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem5LabelWrap.Location = new System.Drawing.Point(20, 267);
+            this.QRItem5LabelWrap.Location = new System.Drawing.Point(20, 286);
             this.QRItem5LabelWrap.Margin = new System.Windows.Forms.Padding(0);
             this.QRItem5LabelWrap.Name = "QRItem5LabelWrap";
-            this.QRItem5LabelWrap.Size = new System.Drawing.Size(324, 55);
+            this.QRItem5LabelWrap.Size = new System.Drawing.Size(324, 59);
             this.QRItem5LabelWrap.TabIndex = 2;
             // 
             // QRITEM5CODE
@@ -1077,7 +1077,7 @@
             this.QRITEM5CODE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QRITEM5CODE.Location = new System.Drawing.Point(0, 0);
             this.QRITEM5CODE.Name = "QRITEM5CODE";
-            this.QRITEM5CODE.Size = new System.Drawing.Size(324, 55);
+            this.QRITEM5CODE.Size = new System.Drawing.Size(324, 59);
             this.QRITEM5CODE.TabIndex = 0;
             this.QRITEM5CODE.Text = "A1234";
             // 
@@ -1086,11 +1086,11 @@
             this.QRItem5ImgWrap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.QRItem5ImgWrap.BackColor = System.Drawing.Color.Transparent;
             this.QRItem5ImgWrap.Controls.Add(this.QRItem5Img);
-            this.QRItem5ImgWrap.Location = new System.Drawing.Point(110, 100);
-            this.QRItem5ImgWrap.MaximumSize = new System.Drawing.Size(144, 144);
-            this.QRItem5ImgWrap.MinimumSize = new System.Drawing.Size(144, 144);
+            this.QRItem5ImgWrap.Location = new System.Drawing.Point(110, 107);
+            this.QRItem5ImgWrap.MaximumSize = new System.Drawing.Size(144, 154);
+            this.QRItem5ImgWrap.MinimumSize = new System.Drawing.Size(144, 154);
             this.QRItem5ImgWrap.Name = "QRItem5ImgWrap";
-            this.QRItem5ImgWrap.Size = new System.Drawing.Size(144, 144);
+            this.QRItem5ImgWrap.Size = new System.Drawing.Size(144, 154);
             this.QRItem5ImgWrap.TabIndex = 3;
             // 
             // QRItem5Img
@@ -1100,7 +1100,7 @@
             this.QRItem5Img.Name = "QRItem5Img";
             this.QRItem5Img.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.QRItem5Img.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.QRItem5Img.Size = new System.Drawing.Size(144, 144);
+            this.QRItem5Img.Size = new System.Drawing.Size(144, 154);
             this.QRItem5Img.TabIndex = 1;
             // 
             // QRItem4Wrap
@@ -1111,7 +1111,7 @@
             this.QRItem4Wrap.Location = new System.Drawing.Point(1130, 5);
             this.QRItem4Wrap.Margin = new System.Windows.Forms.Padding(5);
             this.QRItem4Wrap.Name = "QRItem4Wrap";
-            this.QRItem4Wrap.Size = new System.Drawing.Size(365, 374);
+            this.QRItem4Wrap.Size = new System.Drawing.Size(365, 401);
             this.QRItem4Wrap.TabIndex = 3;
             // 
             // QRItem4
@@ -1129,14 +1129,14 @@
             this.QRItem4.Location = new System.Drawing.Point(0, 0);
             this.QRItem4.Name = "QRItem4";
             this.QRItem4.RowCount = 6;
-            this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem4.Size = new System.Drawing.Size(365, 374);
+            this.QRItem4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem4.Size = new System.Drawing.Size(365, 401);
             this.QRItem4.TabIndex = 0;
             // 
             // pictureEdit4
@@ -1151,7 +1151,7 @@
             this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit4.Size = new System.Drawing.Size(80, 40);
+            this.pictureEdit4.Size = new System.Drawing.Size(80, 43);
             this.pictureEdit4.TabIndex = 0;
             // 
             // QRItem4LabelWrap
@@ -1160,10 +1160,10 @@
             this.QRItem4.SetColumnSpan(this.QRItem4LabelWrap, 3);
             this.QRItem4LabelWrap.Controls.Add(this.QRITEM4CODE);
             this.QRItem4LabelWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem4LabelWrap.Location = new System.Drawing.Point(20, 267);
+            this.QRItem4LabelWrap.Location = new System.Drawing.Point(20, 286);
             this.QRItem4LabelWrap.Margin = new System.Windows.Forms.Padding(0);
             this.QRItem4LabelWrap.Name = "QRItem4LabelWrap";
-            this.QRItem4LabelWrap.Size = new System.Drawing.Size(324, 55);
+            this.QRItem4LabelWrap.Size = new System.Drawing.Size(324, 59);
             this.QRItem4LabelWrap.TabIndex = 2;
             // 
             // QRITEM4CODE
@@ -1179,7 +1179,7 @@
             this.QRITEM4CODE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QRITEM4CODE.Location = new System.Drawing.Point(0, 0);
             this.QRITEM4CODE.Name = "QRITEM4CODE";
-            this.QRITEM4CODE.Size = new System.Drawing.Size(324, 55);
+            this.QRITEM4CODE.Size = new System.Drawing.Size(324, 59);
             this.QRITEM4CODE.TabIndex = 0;
             this.QRITEM4CODE.Text = "A1234";
             // 
@@ -1188,11 +1188,11 @@
             this.QRItem4ImgWrap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.QRItem4ImgWrap.BackColor = System.Drawing.Color.Transparent;
             this.QRItem4ImgWrap.Controls.Add(this.QRItem4Img);
-            this.QRItem4ImgWrap.Location = new System.Drawing.Point(110, 100);
-            this.QRItem4ImgWrap.MaximumSize = new System.Drawing.Size(144, 144);
-            this.QRItem4ImgWrap.MinimumSize = new System.Drawing.Size(144, 144);
+            this.QRItem4ImgWrap.Location = new System.Drawing.Point(110, 107);
+            this.QRItem4ImgWrap.MaximumSize = new System.Drawing.Size(144, 154);
+            this.QRItem4ImgWrap.MinimumSize = new System.Drawing.Size(144, 154);
             this.QRItem4ImgWrap.Name = "QRItem4ImgWrap";
-            this.QRItem4ImgWrap.Size = new System.Drawing.Size(144, 144);
+            this.QRItem4ImgWrap.Size = new System.Drawing.Size(144, 154);
             this.QRItem4ImgWrap.TabIndex = 3;
             // 
             // QRItem4Img
@@ -1202,7 +1202,7 @@
             this.QRItem4Img.Name = "QRItem4Img";
             this.QRItem4Img.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.QRItem4Img.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.QRItem4Img.Size = new System.Drawing.Size(144, 144);
+            this.QRItem4Img.Size = new System.Drawing.Size(144, 154);
             this.QRItem4Img.TabIndex = 1;
             // 
             // QRItem3Wrap
@@ -1213,7 +1213,7 @@
             this.QRItem3Wrap.Location = new System.Drawing.Point(755, 5);
             this.QRItem3Wrap.Margin = new System.Windows.Forms.Padding(5);
             this.QRItem3Wrap.Name = "QRItem3Wrap";
-            this.QRItem3Wrap.Size = new System.Drawing.Size(365, 374);
+            this.QRItem3Wrap.Size = new System.Drawing.Size(365, 401);
             this.QRItem3Wrap.TabIndex = 2;
             // 
             // QRItem3
@@ -1231,14 +1231,14 @@
             this.QRItem3.Location = new System.Drawing.Point(0, 0);
             this.QRItem3.Name = "QRItem3";
             this.QRItem3.RowCount = 6;
-            this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem3.Size = new System.Drawing.Size(365, 374);
+            this.QRItem3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem3.Size = new System.Drawing.Size(365, 401);
             this.QRItem3.TabIndex = 0;
             // 
             // pictureEdit3
@@ -1253,7 +1253,7 @@
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Size = new System.Drawing.Size(80, 40);
+            this.pictureEdit3.Size = new System.Drawing.Size(80, 43);
             this.pictureEdit3.TabIndex = 0;
             // 
             // QRItem3LabelWrap
@@ -1262,10 +1262,10 @@
             this.QRItem3.SetColumnSpan(this.QRItem3LabelWrap, 3);
             this.QRItem3LabelWrap.Controls.Add(this.QRITEM3CODE);
             this.QRItem3LabelWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem3LabelWrap.Location = new System.Drawing.Point(20, 267);
+            this.QRItem3LabelWrap.Location = new System.Drawing.Point(20, 286);
             this.QRItem3LabelWrap.Margin = new System.Windows.Forms.Padding(0);
             this.QRItem3LabelWrap.Name = "QRItem3LabelWrap";
-            this.QRItem3LabelWrap.Size = new System.Drawing.Size(324, 55);
+            this.QRItem3LabelWrap.Size = new System.Drawing.Size(324, 59);
             this.QRItem3LabelWrap.TabIndex = 2;
             // 
             // QRITEM3CODE
@@ -1281,7 +1281,7 @@
             this.QRITEM3CODE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QRITEM3CODE.Location = new System.Drawing.Point(0, 0);
             this.QRITEM3CODE.Name = "QRITEM3CODE";
-            this.QRITEM3CODE.Size = new System.Drawing.Size(324, 55);
+            this.QRITEM3CODE.Size = new System.Drawing.Size(324, 59);
             this.QRITEM3CODE.TabIndex = 0;
             this.QRITEM3CODE.Text = "A1234";
             // 
@@ -1290,11 +1290,11 @@
             this.QRItem3ImgWrap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.QRItem3ImgWrap.BackColor = System.Drawing.Color.Transparent;
             this.QRItem3ImgWrap.Controls.Add(this.QRItem3Img);
-            this.QRItem3ImgWrap.Location = new System.Drawing.Point(110, 100);
-            this.QRItem3ImgWrap.MaximumSize = new System.Drawing.Size(144, 144);
-            this.QRItem3ImgWrap.MinimumSize = new System.Drawing.Size(144, 144);
+            this.QRItem3ImgWrap.Location = new System.Drawing.Point(110, 107);
+            this.QRItem3ImgWrap.MaximumSize = new System.Drawing.Size(144, 154);
+            this.QRItem3ImgWrap.MinimumSize = new System.Drawing.Size(144, 154);
             this.QRItem3ImgWrap.Name = "QRItem3ImgWrap";
-            this.QRItem3ImgWrap.Size = new System.Drawing.Size(144, 144);
+            this.QRItem3ImgWrap.Size = new System.Drawing.Size(144, 154);
             this.QRItem3ImgWrap.TabIndex = 3;
             // 
             // QRItem3Img
@@ -1304,7 +1304,7 @@
             this.QRItem3Img.Name = "QRItem3Img";
             this.QRItem3Img.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.QRItem3Img.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.QRItem3Img.Size = new System.Drawing.Size(144, 144);
+            this.QRItem3Img.Size = new System.Drawing.Size(144, 154);
             this.QRItem3Img.TabIndex = 1;
             // 
             // QRItem2Wrap
@@ -1315,7 +1315,7 @@
             this.QRItem2Wrap.Location = new System.Drawing.Point(380, 5);
             this.QRItem2Wrap.Margin = new System.Windows.Forms.Padding(5);
             this.QRItem2Wrap.Name = "QRItem2Wrap";
-            this.QRItem2Wrap.Size = new System.Drawing.Size(365, 374);
+            this.QRItem2Wrap.Size = new System.Drawing.Size(365, 401);
             this.QRItem2Wrap.TabIndex = 1;
             // 
             // QRItem2
@@ -1333,14 +1333,14 @@
             this.QRItem2.Location = new System.Drawing.Point(0, 0);
             this.QRItem2.Name = "QRItem2";
             this.QRItem2.RowCount = 6;
-            this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem2.Size = new System.Drawing.Size(365, 374);
+            this.QRItem2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem2.Size = new System.Drawing.Size(365, 401);
             this.QRItem2.TabIndex = 0;
             // 
             // pictureEdit2
@@ -1355,7 +1355,7 @@
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit2.Size = new System.Drawing.Size(80, 40);
+            this.pictureEdit2.Size = new System.Drawing.Size(80, 43);
             this.pictureEdit2.TabIndex = 0;
             // 
             // QRItem2LabelWrap
@@ -1364,10 +1364,10 @@
             this.QRItem2.SetColumnSpan(this.QRItem2LabelWrap, 3);
             this.QRItem2LabelWrap.Controls.Add(this.QRITEM2CODE);
             this.QRItem2LabelWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem2LabelWrap.Location = new System.Drawing.Point(20, 267);
+            this.QRItem2LabelWrap.Location = new System.Drawing.Point(20, 286);
             this.QRItem2LabelWrap.Margin = new System.Windows.Forms.Padding(0);
             this.QRItem2LabelWrap.Name = "QRItem2LabelWrap";
-            this.QRItem2LabelWrap.Size = new System.Drawing.Size(324, 55);
+            this.QRItem2LabelWrap.Size = new System.Drawing.Size(324, 59);
             this.QRItem2LabelWrap.TabIndex = 2;
             // 
             // QRITEM2CODE
@@ -1383,7 +1383,7 @@
             this.QRITEM2CODE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QRITEM2CODE.Location = new System.Drawing.Point(0, 0);
             this.QRITEM2CODE.Name = "QRITEM2CODE";
-            this.QRITEM2CODE.Size = new System.Drawing.Size(324, 55);
+            this.QRITEM2CODE.Size = new System.Drawing.Size(324, 59);
             this.QRITEM2CODE.TabIndex = 0;
             this.QRITEM2CODE.Text = "A1235";
             // 
@@ -1392,11 +1392,11 @@
             this.QRItem2ImgWrap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.QRItem2ImgWrap.BackColor = System.Drawing.Color.Transparent;
             this.QRItem2ImgWrap.Controls.Add(this.QRItem2Img);
-            this.QRItem2ImgWrap.Location = new System.Drawing.Point(110, 100);
-            this.QRItem2ImgWrap.MaximumSize = new System.Drawing.Size(144, 144);
-            this.QRItem2ImgWrap.MinimumSize = new System.Drawing.Size(144, 144);
+            this.QRItem2ImgWrap.Location = new System.Drawing.Point(110, 107);
+            this.QRItem2ImgWrap.MaximumSize = new System.Drawing.Size(144, 154);
+            this.QRItem2ImgWrap.MinimumSize = new System.Drawing.Size(144, 154);
             this.QRItem2ImgWrap.Name = "QRItem2ImgWrap";
-            this.QRItem2ImgWrap.Size = new System.Drawing.Size(144, 144);
+            this.QRItem2ImgWrap.Size = new System.Drawing.Size(144, 154);
             this.QRItem2ImgWrap.TabIndex = 3;
             // 
             // QRItem2Img
@@ -1406,7 +1406,7 @@
             this.QRItem2Img.Name = "QRItem2Img";
             this.QRItem2Img.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.QRItem2Img.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.QRItem2Img.Size = new System.Drawing.Size(144, 144);
+            this.QRItem2Img.Size = new System.Drawing.Size(144, 154);
             this.QRItem2Img.TabIndex = 1;
             // 
             // QRItem1Wrap
@@ -1417,7 +1417,7 @@
             this.QRItem1Wrap.Location = new System.Drawing.Point(5, 5);
             this.QRItem1Wrap.Margin = new System.Windows.Forms.Padding(5);
             this.QRItem1Wrap.Name = "QRItem1Wrap";
-            this.QRItem1Wrap.Size = new System.Drawing.Size(365, 374);
+            this.QRItem1Wrap.Size = new System.Drawing.Size(365, 401);
             this.QRItem1Wrap.TabIndex = 0;
             // 
             // QRItem1
@@ -1435,14 +1435,14 @@
             this.QRItem1.Location = new System.Drawing.Point(0, 0);
             this.QRItem1.Name = "QRItem1";
             this.QRItem1.RowCount = 6;
-            this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.QRItem1.Size = new System.Drawing.Size(365, 374);
+            this.QRItem1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.QRItem1.Size = new System.Drawing.Size(365, 401);
             this.QRItem1.TabIndex = 0;
             // 
             // pictureEdit1
@@ -1457,7 +1457,7 @@
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(80, 40);
+            this.pictureEdit1.Size = new System.Drawing.Size(80, 43);
             this.pictureEdit1.TabIndex = 0;
             // 
             // QRItem1LabelWrap
@@ -1466,10 +1466,10 @@
             this.QRItem1.SetColumnSpan(this.QRItem1LabelWrap, 3);
             this.QRItem1LabelWrap.Controls.Add(this.QRITEM1CODE);
             this.QRItem1LabelWrap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QRItem1LabelWrap.Location = new System.Drawing.Point(20, 267);
+            this.QRItem1LabelWrap.Location = new System.Drawing.Point(20, 286);
             this.QRItem1LabelWrap.Margin = new System.Windows.Forms.Padding(0);
             this.QRItem1LabelWrap.Name = "QRItem1LabelWrap";
-            this.QRItem1LabelWrap.Size = new System.Drawing.Size(324, 55);
+            this.QRItem1LabelWrap.Size = new System.Drawing.Size(324, 59);
             this.QRItem1LabelWrap.TabIndex = 2;
             // 
             // QRITEM1CODE
@@ -1485,7 +1485,7 @@
             this.QRITEM1CODE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QRITEM1CODE.Location = new System.Drawing.Point(0, 0);
             this.QRITEM1CODE.Name = "QRITEM1CODE";
-            this.QRITEM1CODE.Size = new System.Drawing.Size(324, 55);
+            this.QRITEM1CODE.Size = new System.Drawing.Size(324, 59);
             this.QRITEM1CODE.TabIndex = 0;
             this.QRITEM1CODE.Text = "A1234";
             // 
@@ -1494,11 +1494,11 @@
             this.QRItem1ImgWrap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.QRItem1ImgWrap.BackColor = System.Drawing.Color.Transparent;
             this.QRItem1ImgWrap.Controls.Add(this.QRItem1Img);
-            this.QRItem1ImgWrap.Location = new System.Drawing.Point(110, 100);
-            this.QRItem1ImgWrap.MaximumSize = new System.Drawing.Size(144, 144);
-            this.QRItem1ImgWrap.MinimumSize = new System.Drawing.Size(144, 144);
+            this.QRItem1ImgWrap.Location = new System.Drawing.Point(110, 107);
+            this.QRItem1ImgWrap.MaximumSize = new System.Drawing.Size(144, 154);
+            this.QRItem1ImgWrap.MinimumSize = new System.Drawing.Size(144, 154);
             this.QRItem1ImgWrap.Name = "QRItem1ImgWrap";
-            this.QRItem1ImgWrap.Size = new System.Drawing.Size(144, 144);
+            this.QRItem1ImgWrap.Size = new System.Drawing.Size(144, 154);
             this.QRItem1ImgWrap.TabIndex = 3;
             // 
             // QRItem1Img
@@ -1508,7 +1508,7 @@
             this.QRItem1Img.Name = "QRItem1Img";
             this.QRItem1Img.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.QRItem1Img.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.QRItem1Img.Size = new System.Drawing.Size(144, 144);
+            this.QRItem1Img.Size = new System.Drawing.Size(144, 154);
             this.QRItem1Img.TabIndex = 1;
             // 
             // timer1
@@ -1517,9 +1517,9 @@
             // 
             // MT002F00
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1910, 1008);
+            this.ClientSize = new System.Drawing.Size(1910, 1080);
             this.Controls.Add(this.pnlRoot);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MT002F00";

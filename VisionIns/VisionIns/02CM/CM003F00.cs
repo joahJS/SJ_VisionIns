@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using Newtonsoft.Json.Linq;
 
 namespace VisionIns
 {
@@ -55,6 +56,30 @@ namespace VisionIns
 
             if (dt != null)
             {
+                //T_0001H.RESULT_JSON에서 제품유형(part_type)만 뽑아 그리드용 컬럼으로 추가
+                if (dt.Columns.Contains("RESULT_JSON") && !dt.Columns.Contains("PART_TYPE"))
+                {
+                    dt.Columns.Add("PART_TYPE", typeof(string));
+
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        string json = row["RESULT_JSON"]?.ToString();
+
+                        if (string.IsNullOrEmpty(json))
+                            continue;
+
+                        try
+                        {
+                            JObject resultObj = JObject.Parse(json);
+                            row["PART_TYPE"] = resultObj["part_type"]?.ToString();
+                        }
+                        catch
+                        {
+                            //RESULT_JSON 형식이 예상과 다른 경우 무시
+                        }
+                    }
+                }
+
                 GridRetr.DataSource = dt;
             }
         }
@@ -101,7 +126,7 @@ namespace VisionIns
 
         private void BtnDel_Click(object sender, EventArgs e)
         {
-            string sSlino = GridViewRetr.GetFocusedRowCellValue("SLINO")?.ToString();
+            string sSlino = GridViewRetr.GetFocusedRowCellValue("ID")?.ToString();
 
             int i = GridViewRetr.GetFocusedDataSourceRowIndex();
 
@@ -113,7 +138,7 @@ namespace VisionIns
             {
                 Dictionary<string, string> dicParams = new Dictionary<string, string>();
                 dicParams.Add("CMD", "DEL");
-                dicParams.Add("SLINO", sSlino);
+                dicParams.Add("ID", sSlino);
 
                 DataTable dtResult = ComnEtcFunc.GetInfo(dicParams, this.PROCEDURE_ID);
                 if (dtResult.Rows.Count > 0)
@@ -155,7 +180,7 @@ namespace VisionIns
             {
                 CM003F01 frm = new CM003F01();
                 frm.Owner = this;
-                frm._SLINO = GridViewRetr.GetFocusedRowCellValue("SLINO")?.ToString();
+                frm._SLINO = GridViewRetr.GetFocusedRowCellValue("ID")?.ToString();
                 frm.DataRowSendEvent += new CM003F01.SendDataHandler(GetDataRow);
                 frm.Show();
             }
