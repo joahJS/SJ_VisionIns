@@ -58,6 +58,7 @@ namespace VisionIns
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dt_YearMonth.Properties.CalendarTimeProperties)).BeginInit();
@@ -78,6 +79,7 @@ namespace VisionIns
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             this.SuspendLayout();
             //
             // layoutControl1
@@ -232,10 +234,10 @@ namespace VisionIns
             //
             this.BtnPrevYM.Location = new System.Drawing.Point(24, 44);
             this.BtnPrevYM.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnPrevYM.MaximumSize = new System.Drawing.Size(40, 29);
-            this.BtnPrevYM.MinimumSize = new System.Drawing.Size(40, 29);
+            this.BtnPrevYM.MaximumSize = new System.Drawing.Size(28, 29);
+            this.BtnPrevYM.MinimumSize = new System.Drawing.Size(28, 29);
             this.BtnPrevYM.Name = "BtnPrevYM";
-            this.BtnPrevYM.Size = new System.Drawing.Size(40, 29);
+            this.BtnPrevYM.Size = new System.Drawing.Size(28, 29);
             this.BtnPrevYM.StyleController = this.layoutControl1;
             this.BtnPrevYM.TabIndex = 20;
             this.BtnPrevYM.TabStop = false;
@@ -246,10 +248,10 @@ namespace VisionIns
             //
             this.BtnNextYM.Location = new System.Drawing.Point(206, 44);
             this.BtnNextYM.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnNextYM.MaximumSize = new System.Drawing.Size(40, 29);
-            this.BtnNextYM.MinimumSize = new System.Drawing.Size(40, 29);
+            this.BtnNextYM.MaximumSize = new System.Drawing.Size(28, 29);
+            this.BtnNextYM.MinimumSize = new System.Drawing.Size(28, 29);
             this.BtnNextYM.Name = "BtnNextYM";
-            this.BtnNextYM.Size = new System.Drawing.Size(40, 29);
+            this.BtnNextYM.Size = new System.Drawing.Size(28, 29);
             this.BtnNextYM.StyleController = this.layoutControl1;
             this.BtnNextYM.TabIndex = 21;
             this.BtnNextYM.TabStop = false;
@@ -294,7 +296,7 @@ namespace VisionIns
             this.BtnPrint.StyleController = this.layoutControl1;
             this.BtnPrint.TabIndex = 13;
             this.BtnPrint.TabStop = false;
-            this.BtnPrint.Text = "라벨출력";
+            this.BtnPrint.Text = "라벨출력(F6)";
             this.BtnPrint.Click += new System.EventHandler(this.BtnPrint_Click);
             //
             // BtnExcel
@@ -366,44 +368,45 @@ namespace VisionIns
             this.emptySpaceItem1,
             this.layoutControlItem7,
             this.layoutControlItem8,
-            this.layoutControlItem9});
+            this.layoutControlItem9,
+            this.layoutControlItem10});
             this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup4.Name = "layoutControlGroup4";
             this.layoutControlGroup4.Size = new System.Drawing.Size(1474, 80);
             this.layoutControlGroup4.Text = "검색조건";
             //
-            // layoutControlItem2
-            //
-            this.layoutControlItem2.Control = this.BtnPrevYM;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem2.MaxSize = new System.Drawing.Size(44, 36);
-            this.layoutControlItem2.MinSize = new System.Drawing.Size(44, 36);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(44, 36);
-            this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem2.Text = "조회년월";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(48, 15);
-            //
-            // layoutControlItem3
+            // layoutControlItem3 (조회년월 캡션 + 날짜선택란을 하나의 항목으로 묶음)
             //
             this.layoutControlItem3.Control = this.Dt_YearMonth;
-            this.layoutControlItem3.Location = new System.Drawing.Point(44, 0);
-            this.layoutControlItem3.MaxSize = new System.Drawing.Size(124, 29);
-            this.layoutControlItem3.MinSize = new System.Drawing.Size(124, 29);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem3.MaxSize = new System.Drawing.Size(200, 36);
+            this.layoutControlItem3.MinSize = new System.Drawing.Size(200, 36);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(124, 36);
+            this.layoutControlItem3.Size = new System.Drawing.Size(200, 36);
             this.layoutControlItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
+            this.layoutControlItem3.Text = "조회년월";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(52, 15);
             //
-            // layoutControlItem4
+            // layoutControlItem2 (< 버튼, 캡션 없음)
+            //
+            this.layoutControlItem2.Control = this.BtnPrevYM;
+            this.layoutControlItem2.Location = new System.Drawing.Point(200, 0);
+            this.layoutControlItem2.MaxSize = new System.Drawing.Size(32, 36);
+            this.layoutControlItem2.MinSize = new System.Drawing.Size(32, 36);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(32, 36);
+            this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            //
+            // layoutControlItem4 (> 버튼)
             //
             this.layoutControlItem4.Control = this.BtnNextYM;
-            this.layoutControlItem4.Location = new System.Drawing.Point(168, 0);
-            this.layoutControlItem4.MaxSize = new System.Drawing.Size(44, 36);
-            this.layoutControlItem4.MinSize = new System.Drawing.Size(44, 36);
+            this.layoutControlItem4.Location = new System.Drawing.Point(232, 0);
+            this.layoutControlItem4.MaxSize = new System.Drawing.Size(32, 36);
+            this.layoutControlItem4.MinSize = new System.Drawing.Size(32, 36);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(44, 36);
+            this.layoutControlItem4.Size = new System.Drawing.Size(32, 36);
             this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
@@ -411,11 +414,11 @@ namespace VisionIns
             // layoutControlItem5
             //
             this.layoutControlItem5.Control = this.BtnInit;
-            this.layoutControlItem5.Location = new System.Drawing.Point(212, 0);
-            this.layoutControlItem5.MaxSize = new System.Drawing.Size(88, 36);
-            this.layoutControlItem5.MinSize = new System.Drawing.Size(88, 36);
+            this.layoutControlItem5.Location = new System.Drawing.Point(264, 0);
+            this.layoutControlItem5.MaxSize = new System.Drawing.Size(84, 36);
+            this.layoutControlItem5.MinSize = new System.Drawing.Size(84, 36);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(88, 36);
+            this.layoutControlItem5.Size = new System.Drawing.Size(84, 36);
             this.layoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
@@ -425,29 +428,29 @@ namespace VisionIns
             this.layoutControlItem6.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem6.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.layoutControlItem6.Control = this.Tx_Word;
-            this.layoutControlItem6.Location = new System.Drawing.Point(300, 0);
-            this.layoutControlItem6.MaxSize = new System.Drawing.Size(178, 36);
-            this.layoutControlItem6.MinSize = new System.Drawing.Size(178, 36);
+            this.layoutControlItem6.Location = new System.Drawing.Point(348, 0);
+            this.layoutControlItem6.MaxSize = new System.Drawing.Size(250, 36);
+            this.layoutControlItem6.MinSize = new System.Drawing.Size(250, 36);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(178, 36);
+            this.layoutControlItem6.Size = new System.Drawing.Size(250, 36);
             this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem6.Text = "품명/LOT검색";
             this.layoutControlItem6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(70, 15);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(90, 15);
             this.layoutControlItem6.TextToControlDistance = 5;
             //
             // emptySpaceItem1
             //
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(478, 0);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(598, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(527, 36);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(520, 36);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             //
             // layoutControlItem7
             //
             this.layoutControlItem7.Control = this.BtnRetr;
-            this.layoutControlItem7.Location = new System.Drawing.Point(1005, 0);
+            this.layoutControlItem7.Location = new System.Drawing.Point(1118, 0);
             this.layoutControlItem7.MaxSize = new System.Drawing.Size(89, 36);
             this.layoutControlItem7.MinSize = new System.Drawing.Size(89, 36);
             this.layoutControlItem7.Name = "layoutControlItem7";
@@ -459,7 +462,7 @@ namespace VisionIns
             // layoutControlItem8
             //
             this.layoutControlItem8.Control = this.BtnPrint;
-            this.layoutControlItem8.Location = new System.Drawing.Point(1094, 0);
+            this.layoutControlItem8.Location = new System.Drawing.Point(1207, 0);
             this.layoutControlItem8.MaxSize = new System.Drawing.Size(89, 36);
             this.layoutControlItem8.MinSize = new System.Drawing.Size(89, 36);
             this.layoutControlItem8.Name = "layoutControlItem8";
@@ -471,14 +474,26 @@ namespace VisionIns
             // layoutControlItem9
             //
             this.layoutControlItem9.Control = this.BtnExcel;
-            this.layoutControlItem9.Location = new System.Drawing.Point(1183, 0);
-            this.layoutControlItem9.MaxSize = new System.Drawing.Size(178, 36);
-            this.layoutControlItem9.MinSize = new System.Drawing.Size(178, 36);
+            this.layoutControlItem9.Location = new System.Drawing.Point(1296, 0);
+            this.layoutControlItem9.MaxSize = new System.Drawing.Size(89, 36);
+            this.layoutControlItem9.MinSize = new System.Drawing.Size(89, 36);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(178, 36);
+            this.layoutControlItem9.Size = new System.Drawing.Size(89, 36);
             this.layoutControlItem9.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
+            //
+            // layoutControlItem10
+            //
+            this.layoutControlItem10.Control = this.BtnClose;
+            this.layoutControlItem10.Location = new System.Drawing.Point(1385, 0);
+            this.layoutControlItem10.MaxSize = new System.Drawing.Size(89, 36);
+            this.layoutControlItem10.MinSize = new System.Drawing.Size(89, 36);
+            this.layoutControlItem10.Name = "layoutControlItem10";
+            this.layoutControlItem10.Size = new System.Drawing.Size(89, 36);
+            this.layoutControlItem10.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem10.TextVisible = false;
             //
             // CM004F00
             //
@@ -511,6 +526,7 @@ namespace VisionIns
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -542,6 +558,7 @@ namespace VisionIns
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
         private DevExpress.XtraGrid.Columns.GridColumn GridColSeqno;
         private DevExpress.XtraGrid.Columns.GridColumn GridColLotno;
         private DevExpress.XtraGrid.Columns.GridColumn GridColIspec;

@@ -263,7 +263,7 @@
             //
             this.Pic_DebugImg.Location = new System.Drawing.Point(2, 2);
             this.Pic_DebugImg.Name = "Pic_DebugImg";
-            this.Pic_DebugImg.Size = new System.Drawing.Size(380, 743);
+            this.Pic_DebugImg.Size = new System.Drawing.Size(320, 743);
             this.Pic_DebugImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pic_DebugImg.TabIndex = 101;
             this.Pic_DebugImg.TabStop = false;
@@ -425,13 +425,13 @@
             this.layoutControlGroup5,
             this.layoutControlGroupDebug});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(888, 834);
+            this.Root.Size = new System.Drawing.Size(828, 834);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem21
             // 
             this.layoutControlItem21.Control = this.Bt_Reset;
-            this.layoutControlItem21.Location = new System.Drawing.Point(453, 0);
+            this.layoutControlItem21.Location = new System.Drawing.Point(393, 0);
             this.layoutControlItem21.MaxSize = new System.Drawing.Size(98, 34);
             this.layoutControlItem21.MinSize = new System.Drawing.Size(84, 34);
             this.layoutControlItem21.Name = "layoutControlItem21";
@@ -443,7 +443,7 @@
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.Bt_SaveMul;
-            this.layoutControlItem5.Location = new System.Drawing.Point(551, 0);
+            this.layoutControlItem5.Location = new System.Drawing.Point(491, 0);
             this.layoutControlItem5.MaxSize = new System.Drawing.Size(121, 36);
             this.layoutControlItem5.MinSize = new System.Drawing.Size(104, 36);
             this.layoutControlItem5.Name = "layoutControlItem5";
@@ -455,7 +455,7 @@
             // layoutControlItem13
             // 
             this.layoutControlItem13.Control = this.Bt_Save;
-            this.layoutControlItem13.Location = new System.Drawing.Point(672, 0);
+            this.layoutControlItem13.Location = new System.Drawing.Point(612, 0);
             this.layoutControlItem13.MaxSize = new System.Drawing.Size(98, 34);
             this.layoutControlItem13.MinSize = new System.Drawing.Size(84, 34);
             this.layoutControlItem13.Name = "layoutControlItem13";
@@ -467,7 +467,7 @@
             // layoutControlItem15
             // 
             this.layoutControlItem15.Control = this.Bt_Close;
-            this.layoutControlItem15.Location = new System.Drawing.Point(770, 0);
+            this.layoutControlItem15.Location = new System.Drawing.Point(710, 0);
             this.layoutControlItem15.MaxSize = new System.Drawing.Size(98, 34);
             this.layoutControlItem15.MinSize = new System.Drawing.Size(84, 34);
             this.layoutControlItem15.Name = "layoutControlItem15";
@@ -657,7 +657,7 @@
             this.layoutControlItemDebug});
             this.layoutControlGroupDebug.Location = new System.Drawing.Point(460, 36);
             this.layoutControlGroupDebug.Name = "layoutControlGroupDebug";
-            this.layoutControlGroupDebug.Size = new System.Drawing.Size(408, 798);
+            this.layoutControlGroupDebug.Size = new System.Drawing.Size(348, 798);
             this.layoutControlGroupDebug.Text = "디버그이미지";
             //
             // layoutControlItemDebug
@@ -665,7 +665,7 @@
             this.layoutControlItemDebug.Control = this.Pic_DebugImg;
             this.layoutControlItemDebug.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemDebug.Name = "layoutControlItemDebug";
-            this.layoutControlItemDebug.Size = new System.Drawing.Size(384, 747);
+            this.layoutControlItemDebug.Size = new System.Drawing.Size(324, 747);
             this.layoutControlItemDebug.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemDebug.TextVisible = false;
             //
@@ -774,7 +774,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 834);
+            this.ClientSize = new System.Drawing.Size(828, 834);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CM003F01";

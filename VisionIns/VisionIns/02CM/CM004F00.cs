@@ -125,6 +125,8 @@ namespace VisionIns
         {
             if (e.KeyCode == Keys.F5)
                 BtnRetr.PerformClick();
+            else if (e.KeyCode == Keys.F6)
+                BtnPrint.PerformClick();
             else if (e.KeyCode == Keys.F8)
                 BtnExcel.PerformClick();
             else if (e.KeyCode == Keys.Escape)
