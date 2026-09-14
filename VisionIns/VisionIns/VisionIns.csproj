@@ -50,6 +50,9 @@
     <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.2.Extensions, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -114,6 +117,18 @@
     </Compile>
     <Compile Include="02CM\CM003F01.Designer.cs">
       <DependentUpon>CM003F01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02CM\CM004F00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02CM\CM004F00.Designer.cs">
+      <DependentUpon>CM004F00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\QrLabelReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\QrLabelReport.Designer.cs">
+      <DependentUpon>QrLabelReport.cs</DependentUpon>
     </Compile>
     <Compile Include="ComnLib\ComnClass.cs" />
     <Compile Include="ComnLib\ComnEtcFunc.cs" />
@@ -209,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="02CM\CM003F00.resx">
       <DependentUpon>CM003F00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02CM\CM004F00.resx">
+      <DependentUpon>CM004F00.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="00MN\MN001F00.resx">
       <DependentUpon>MN001F00.cs</DependentUpon>

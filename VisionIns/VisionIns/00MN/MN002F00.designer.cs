@@ -92,6 +92,7 @@
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement44 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement23 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement31 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement32 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -871,7 +872,8 @@
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement1,
             this.accordionControlElement4,
-            this.accordionControlElement3});
+            this.accordionControlElement3,
+            this.accordionControlElement44});
             this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image")));
             this.accordionControlElement2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
@@ -901,7 +903,19 @@
             this.accordionControlElement3.Tag = "CM003F00";
             this.accordionControlElement3.Text = "검사결과이력";
             this.accordionControlElement3.Click += new System.EventHandler(this.Element_Click);
-            // 
+            //
+            // accordionControlElement44
+            //
+            this.accordionControlElement44.Appearance.Hovered.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement44.Appearance.Hovered.Options.UseFont = true;
+            this.accordionControlElement44.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement44.Appearance.Normal.Options.UseFont = true;
+            this.accordionControlElement44.Name = "accordionControlElement44";
+            this.accordionControlElement44.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement44.Tag = "CM004F00";
+            this.accordionControlElement44.Text = "바코드출력";
+            this.accordionControlElement44.Click += new System.EventHandler(this.Element_Click);
+            //
             // accordionControlElement23
             // 
             this.accordionControlElement23.Appearance.Hovered.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold);
@@ -1063,5 +1077,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement44;
     }
 }

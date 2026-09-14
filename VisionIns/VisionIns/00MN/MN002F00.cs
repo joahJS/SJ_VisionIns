@@ -120,7 +120,8 @@ namespace VisionIns
             if (tag.ToString() == "MN002F00") { frm = new MN002F00(); }        //
             else if (tag.ToString() == "CM001F00") { frm = new CM001F00(); }   // 품목
             else if (tag.ToString() == "CM002F00") { frm = new CM002F00(); }   // 
-            else if (tag.ToString() == "CM003F00") { frm = new CM003F00(); }   // 
+            else if (tag.ToString() == "CM003F00") { frm = new CM003F00(); }   //
+            else if (tag.ToString() == "CM004F00") { frm = new CM004F00(); }   // 바코드출력
 
             else if (tag.ToString() == "SY000F00") { frm = new SY000F00(); }   // 
             else if (tag.ToString() == "SY001F00") { frm = new SY001F00(); }   // 
