@@ -236,7 +236,7 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 689);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 740);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.barDockControlBottom.Size = new System.Drawing.Size(1590, 27);
@@ -248,7 +248,7 @@
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 689);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 740);
             // 
             // barDockControlRight
             // 
@@ -257,7 +257,7 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1590, 0);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 689);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 740);
             // 
             // barButtonSkin
             // 
@@ -348,11 +348,11 @@
             // 
             // GridLogAPI
             // 
-            this.GridLogAPI.Location = new System.Drawing.Point(149, 903);
+            this.GridLogAPI.Location = new System.Drawing.Point(149, 967);
             this.GridLogAPI.MainView = this.gridView1;
             this.GridLogAPI.MenuManager = this.barManager1;
             this.GridLogAPI.Name = "GridLogAPI";
-            this.GridLogAPI.Size = new System.Drawing.Size(39, 35);
+            this.GridLogAPI.Size = new System.Drawing.Size(39, 37);
             this.GridLogAPI.TabIndex = 5;
             this.GridLogAPI.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -360,7 +360,6 @@
             // 
             // gridView1
             // 
-            this.gridView1.DetailHeight = 327;
             this.gridView1.GridControl = this.GridLogAPI;
             this.gridView1.Name = "gridView1";
             // 
@@ -373,7 +372,7 @@
             this.pictureBox1.ImageLocation = "";
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(814, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(814, 43);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
@@ -388,7 +387,7 @@
             this.Bt_Retr.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.Bt_Retr.Location = new System.Drawing.Point(819, 3);
             this.Bt_Retr.Name = "Bt_Retr";
-            this.Bt_Retr.Size = new System.Drawing.Size(110, 40);
+            this.Bt_Retr.Size = new System.Drawing.Size(110, 43);
             this.Bt_Retr.StyleController = this.layoutControl1;
             this.Bt_Retr.TabIndex = 15;
             this.Bt_Retr.Text = "조회(F5)";
@@ -409,7 +408,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1590, 46);
+            this.layoutControl1.Size = new System.Drawing.Size(1590, 49);
             this.layoutControl1.TabIndex = 19;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -423,7 +422,7 @@
             this.Bt_Close.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.Bt_Close.Location = new System.Drawing.Point(1479, 3);
             this.Bt_Close.Name = "Bt_Close";
-            this.Bt_Close.Size = new System.Drawing.Size(110, 40);
+            this.Bt_Close.Size = new System.Drawing.Size(110, 43);
             this.Bt_Close.StyleController = this.layoutControl1;
             this.Bt_Close.TabIndex = 19;
             this.Bt_Close.Text = "닫기(ESC)";
@@ -439,7 +438,7 @@
             this.Bt_Add.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.Bt_Add.Location = new System.Drawing.Point(929, 3);
             this.Bt_Add.Name = "Bt_Add";
-            this.Bt_Add.Size = new System.Drawing.Size(110, 40);
+            this.Bt_Add.Size = new System.Drawing.Size(110, 43);
             this.Bt_Add.StyleController = this.layoutControl1;
             this.Bt_Add.TabIndex = 16;
             this.Bt_Add.Text = "추가(F1)";
@@ -455,7 +454,7 @@
             this.Bt_Save.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.Bt_Save.Location = new System.Drawing.Point(1039, 3);
             this.Bt_Save.Name = "Bt_Save";
-            this.Bt_Save.Size = new System.Drawing.Size(110, 40);
+            this.Bt_Save.Size = new System.Drawing.Size(110, 43);
             this.Bt_Save.StyleController = this.layoutControl1;
             this.Bt_Save.TabIndex = 18;
             this.Bt_Save.Text = "저장(F3)";
@@ -471,7 +470,7 @@
             this.Bt_Delete.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.Bt_Delete.Location = new System.Drawing.Point(1149, 3);
             this.Bt_Delete.Name = "Bt_Delete";
-            this.Bt_Delete.Size = new System.Drawing.Size(110, 40);
+            this.Bt_Delete.Size = new System.Drawing.Size(110, 43);
             this.Bt_Delete.StyleController = this.layoutControl1;
             this.Bt_Delete.TabIndex = 18;
             this.Bt_Delete.Text = "삭제(F4)";
@@ -487,7 +486,7 @@
             this.Bt_Xls.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.Bt_Xls.Location = new System.Drawing.Point(1259, 3);
             this.Bt_Xls.Name = "Bt_Xls";
-            this.Bt_Xls.Size = new System.Drawing.Size(110, 40);
+            this.Bt_Xls.Size = new System.Drawing.Size(110, 43);
             this.Bt_Xls.StyleController = this.layoutControl1;
             this.Bt_Xls.TabIndex = 19;
             this.Bt_Xls.Text = "엑셀(F8)";
@@ -503,7 +502,7 @@
             this.Bt_Print.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.Bt_Print.Location = new System.Drawing.Point(1369, 3);
             this.Bt_Print.Name = "Bt_Print";
-            this.Bt_Print.Size = new System.Drawing.Size(110, 40);
+            this.Bt_Print.Size = new System.Drawing.Size(110, 43);
             this.Bt_Print.StyleController = this.layoutControl1;
             this.Bt_Print.TabIndex = 19;
             this.Bt_Print.Text = "출력(F12)";
@@ -527,7 +526,7 @@
             this.layoutControlItem2});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.Root.Size = new System.Drawing.Size(1590, 46);
+            this.Root.Size = new System.Drawing.Size(1590, 49);
             this.Root.TextVisible = false;
             // 
             // Lci_Save
@@ -536,11 +535,11 @@
             this.Lci_Save.AppearanceItemCaption.Options.UseBackColor = true;
             this.Lci_Save.Control = this.Bt_Save;
             this.Lci_Save.Location = new System.Drawing.Point(1038, 0);
-            this.Lci_Save.MaxSize = new System.Drawing.Size(110, 44);
-            this.Lci_Save.MinSize = new System.Drawing.Size(110, 44);
+            this.Lci_Save.MaxSize = new System.Drawing.Size(110, 47);
+            this.Lci_Save.MinSize = new System.Drawing.Size(110, 47);
             this.Lci_Save.Name = "Lci_Save";
             this.Lci_Save.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 2);
-            this.Lci_Save.Size = new System.Drawing.Size(110, 44);
+            this.Lci_Save.Size = new System.Drawing.Size(110, 47);
             this.Lci_Save.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.Lci_Save.TextSize = new System.Drawing.Size(0, 0);
             this.Lci_Save.TextVisible = false;
@@ -551,11 +550,11 @@
             this.Lci_Add.AppearanceItemCaption.Options.UseBackColor = true;
             this.Lci_Add.Control = this.Bt_Add;
             this.Lci_Add.Location = new System.Drawing.Point(928, 0);
-            this.Lci_Add.MaxSize = new System.Drawing.Size(110, 44);
-            this.Lci_Add.MinSize = new System.Drawing.Size(110, 44);
+            this.Lci_Add.MaxSize = new System.Drawing.Size(110, 47);
+            this.Lci_Add.MinSize = new System.Drawing.Size(110, 47);
             this.Lci_Add.Name = "Lci_Add";
             this.Lci_Add.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 2);
-            this.Lci_Add.Size = new System.Drawing.Size(110, 44);
+            this.Lci_Add.Size = new System.Drawing.Size(110, 47);
             this.Lci_Add.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.Lci_Add.TextSize = new System.Drawing.Size(0, 0);
             this.Lci_Add.TextVisible = false;
@@ -566,11 +565,11 @@
             this.Lci_Retr.AppearanceItemCaption.Options.UseBackColor = true;
             this.Lci_Retr.Control = this.Bt_Retr;
             this.Lci_Retr.Location = new System.Drawing.Point(818, 0);
-            this.Lci_Retr.MaxSize = new System.Drawing.Size(110, 44);
-            this.Lci_Retr.MinSize = new System.Drawing.Size(110, 44);
+            this.Lci_Retr.MaxSize = new System.Drawing.Size(110, 47);
+            this.Lci_Retr.MinSize = new System.Drawing.Size(110, 47);
             this.Lci_Retr.Name = "Lci_Retr";
             this.Lci_Retr.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 2);
-            this.Lci_Retr.Size = new System.Drawing.Size(110, 44);
+            this.Lci_Retr.Size = new System.Drawing.Size(110, 47);
             this.Lci_Retr.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.Lci_Retr.TextSize = new System.Drawing.Size(0, 0);
             this.Lci_Retr.TextVisible = false;
@@ -582,11 +581,11 @@
             this.Lci_Delete.Control = this.Bt_Delete;
             this.Lci_Delete.CustomizationFormText = "layoutControlItem1";
             this.Lci_Delete.Location = new System.Drawing.Point(1148, 0);
-            this.Lci_Delete.MaxSize = new System.Drawing.Size(110, 44);
-            this.Lci_Delete.MinSize = new System.Drawing.Size(110, 44);
+            this.Lci_Delete.MaxSize = new System.Drawing.Size(110, 47);
+            this.Lci_Delete.MinSize = new System.Drawing.Size(110, 47);
             this.Lci_Delete.Name = "Lci_Delete";
             this.Lci_Delete.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 2);
-            this.Lci_Delete.Size = new System.Drawing.Size(110, 44);
+            this.Lci_Delete.Size = new System.Drawing.Size(110, 47);
             this.Lci_Delete.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.Lci_Delete.Text = "layoutControlItem1";
             this.Lci_Delete.TextSize = new System.Drawing.Size(0, 0);
@@ -598,11 +597,11 @@
             this.Lci_Close.AppearanceItemCaption.Options.UseBackColor = true;
             this.Lci_Close.Control = this.Bt_Close;
             this.Lci_Close.Location = new System.Drawing.Point(1478, 0);
-            this.Lci_Close.MaxSize = new System.Drawing.Size(110, 44);
-            this.Lci_Close.MinSize = new System.Drawing.Size(110, 44);
+            this.Lci_Close.MaxSize = new System.Drawing.Size(110, 47);
+            this.Lci_Close.MinSize = new System.Drawing.Size(110, 47);
             this.Lci_Close.Name = "Lci_Close";
             this.Lci_Close.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 2);
-            this.Lci_Close.Size = new System.Drawing.Size(110, 44);
+            this.Lci_Close.Size = new System.Drawing.Size(110, 47);
             this.Lci_Close.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.Lci_Close.TextSize = new System.Drawing.Size(0, 0);
             this.Lci_Close.TextVisible = false;
@@ -614,11 +613,11 @@
             this.Lci_Xls.Control = this.Bt_Xls;
             this.Lci_Xls.CustomizationFormText = "layoutControlItem7";
             this.Lci_Xls.Location = new System.Drawing.Point(1258, 0);
-            this.Lci_Xls.MaxSize = new System.Drawing.Size(110, 44);
-            this.Lci_Xls.MinSize = new System.Drawing.Size(110, 44);
+            this.Lci_Xls.MaxSize = new System.Drawing.Size(110, 47);
+            this.Lci_Xls.MinSize = new System.Drawing.Size(110, 47);
             this.Lci_Xls.Name = "Lci_Xls";
             this.Lci_Xls.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 2);
-            this.Lci_Xls.Size = new System.Drawing.Size(110, 44);
+            this.Lci_Xls.Size = new System.Drawing.Size(110, 47);
             this.Lci_Xls.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.Lci_Xls.Text = "layoutControlItem7";
             this.Lci_Xls.TextSize = new System.Drawing.Size(0, 0);
@@ -631,11 +630,11 @@
             this.Lci_Print.Control = this.Bt_Print;
             this.Lci_Print.CustomizationFormText = "layoutControlItem7";
             this.Lci_Print.Location = new System.Drawing.Point(1368, 0);
-            this.Lci_Print.MaxSize = new System.Drawing.Size(110, 44);
-            this.Lci_Print.MinSize = new System.Drawing.Size(110, 44);
+            this.Lci_Print.MaxSize = new System.Drawing.Size(110, 47);
+            this.Lci_Print.MinSize = new System.Drawing.Size(110, 47);
             this.Lci_Print.Name = "Lci_Print";
             this.Lci_Print.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 2);
-            this.Lci_Print.Size = new System.Drawing.Size(110, 44);
+            this.Lci_Print.Size = new System.Drawing.Size(110, 47);
             this.Lci_Print.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.Lci_Print.Text = "layoutControlItem7";
             this.Lci_Print.TextSize = new System.Drawing.Size(0, 0);
@@ -646,7 +645,7 @@
             this.layoutControlItem2.Control = this.pictureBox1;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(818, 44);
+            this.layoutControlItem2.Size = new System.Drawing.Size(818, 47);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -832,11 +831,15 @@
             this.accordionControlElement22.Appearance.Hovered.Options.UseFont = true;
             this.accordionControlElement22.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accordionControlElement22.Appearance.Normal.Options.UseFont = true;
+            this.accordionControlElement22.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
             this.accordionControlElement22.Name = "accordionControlElement22";
             this.accordionControlElement22.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement22.Tag = "MT002F00";
             this.accordionControlElement22.Text = "다중QR스캔";
-            this.accordionControlElement22.Visible = false;
             this.accordionControlElement22.Click += new System.EventHandler(this.Element_Click);
             // 
             // accordionControl1
@@ -850,11 +853,11 @@
             this.accordionControlElement42,
             this.accordionControlElement41,
             this.accordionControlElement43});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 46);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 49);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
-            this.accordionControl1.Size = new System.Drawing.Size(240, 643);
+            this.accordionControl1.Size = new System.Drawing.Size(240, 691);
             this.accordionControl1.TabIndex = 24;
             this.accordionControl1.Text = "accordionControl1";
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
@@ -949,11 +952,11 @@
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
             this.BackgroundImageStore = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImageStore")));
-            this.ClientSize = new System.Drawing.Size(1590, 716);
+            this.ClientSize = new System.Drawing.Size(1590, 767);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.GridLogAPI);
