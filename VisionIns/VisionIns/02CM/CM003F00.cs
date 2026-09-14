@@ -31,11 +31,10 @@ namespace VisionIns
             Lk_Rslt.Properties.PopulateColumns();
             Lk_Rslt.Properties.Columns["CD"].Visible = false;
 
-            string dtToday = DateTime.Now.ToString("yyyy-MM-dd");  // 오늘 날짜
-            DateTime temp = Convert.ToDateTime(dtToday).AddDays(1 - Convert.ToDateTime(dtToday).Day);    // 그 달의 1일 
-            string dtStrDt = temp.ToString("yyyy-MM-dd");
-
-            Dt_DateF.EditValue = temp.ToString("yyyy-MM-dd");
+            // AI 비전검사 결과(T_0001H)는 1건당 UPLOADED_IMAGE/DEBUG_IMAGE 이미지가 함께 저장되어
+            // 데이터량이 매우 큼. "이번달 1일"을 기본값으로 하면 최초 진입만으로 대량의 이미지를
+            // 한번에 조회하게 되어 OutOfMemoryException이 발생할 수 있어, 기본 조회범위를 오늘 하루로 축소.
+            Dt_DateF.EditValue = DateTime.Today.ToString("yyyy-MM-dd");
             Dt_DateT.EditValue = DateTime.Today;
 
             BtnRetr.PerformClick();
