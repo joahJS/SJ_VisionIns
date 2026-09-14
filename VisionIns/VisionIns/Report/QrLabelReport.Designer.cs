@@ -39,8 +39,6 @@ namespace VisionIns
             this.xrLbl_ITNAM = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLbl_ISPEC_Cap = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLbl_ISPEC = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLbl_TDATE_Cap = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLbl_TDATE = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             //
             // TopMargin
@@ -58,8 +56,6 @@ namespace VisionIns
             // Detail
             //
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLbl_TDATE,
-            this.xrLbl_TDATE_Cap,
             this.xrLbl_ISPEC,
             this.xrLbl_ISPEC_Cap,
             this.xrLbl_ITNAM,
@@ -68,7 +64,8 @@ namespace VisionIns
             this.xrLbl_LOTNO_Cap,
             this.xrQrCode});
             this.Detail.Dpi = 254F;
-            this.Detail.HeightF = 290F;
+            this.Detail.HeightF = 245F;
+            this.Detail.KeepTogether = true;
             this.Detail.Name = "Detail";
             //
             // xrQrCode
@@ -170,35 +167,6 @@ namespace VisionIns
             this.xrLbl_ISPEC.TextFitMode = DevExpress.XtraReports.UI.TextFitMode.ShrinkOnly;
             this.xrLbl_ISPEC.WordWrap = false;
             //
-            // xrLbl_TDATE_Cap
-            //
-            this.xrLbl_TDATE_Cap.Dpi = 254F;
-            this.xrLbl_TDATE_Cap.Font = new System.Drawing.Font("맑은 고딕", 6F);
-            this.xrLbl_TDATE_Cap.LocationFloat = new DevExpress.Utils.PointFloat(5F, 238F);
-            this.xrLbl_TDATE_Cap.Name = "xrLbl_TDATE_Cap";
-            this.xrLbl_TDATE_Cap.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 254F);
-            this.xrLbl_TDATE_Cap.SizeF = new System.Drawing.SizeF(65F, 26F);
-            this.xrLbl_TDATE_Cap.StylePriority.UseFont = false;
-            this.xrLbl_TDATE_Cap.StylePriority.UseTextAlignment = false;
-            this.xrLbl_TDATE_Cap.Text = "일자";
-            this.xrLbl_TDATE_Cap.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            //
-            // xrLbl_TDATE
-            //
-            this.xrLbl_TDATE.CanGrow = false;
-            this.xrLbl_TDATE.Dpi = 254F;
-            this.xrLbl_TDATE.Font = new System.Drawing.Font("굴림", 7F);
-            this.xrLbl_TDATE.LocationFloat = new DevExpress.Utils.PointFloat(75F, 238F);
-            this.xrLbl_TDATE.Name = "xrLbl_TDATE";
-            this.xrLbl_TDATE.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 254F);
-            this.xrLbl_TDATE.SizeF = new System.Drawing.SizeF(210F, 26F);
-            this.xrLbl_TDATE.StylePriority.UseFont = false;
-            this.xrLbl_TDATE.StylePriority.UseTextAlignment = false;
-            this.xrLbl_TDATE.Text = "2026-09-14";
-            this.xrLbl_TDATE.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrLbl_TDATE.TextFitMode = DevExpress.XtraReports.UI.TextFitMode.ShrinkOnly;
-            this.xrLbl_TDATE.WordWrap = false;
-            //
             // QrLabelReport
             //
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -232,7 +200,5 @@ namespace VisionIns
         private DevExpress.XtraReports.UI.XRLabel xrLbl_ITNAM;
         private DevExpress.XtraReports.UI.XRLabel xrLbl_ISPEC_Cap;
         private DevExpress.XtraReports.UI.XRLabel xrLbl_ISPEC;
-        private DevExpress.XtraReports.UI.XRLabel xrLbl_TDATE_Cap;
-        private DevExpress.XtraReports.UI.XRLabel xrLbl_TDATE;
     }
 }

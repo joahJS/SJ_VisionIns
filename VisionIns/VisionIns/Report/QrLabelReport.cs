@@ -19,7 +19,6 @@ namespace VisionIns
             xrLbl_LOTNO.DataBindings.Add("Text", _dt, "LOTNO");
             xrLbl_ITNAM.DataBindings.Add("Text", _dt, "ITNAM");
             xrLbl_ISPEC.DataBindings.Add("Text", _dt, "ISPEC");
-            xrLbl_TDATE.DataBindings.Add("Text", _dt, "TDATE");
         }
     }
 }
