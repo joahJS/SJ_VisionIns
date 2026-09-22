@@ -115,7 +115,7 @@ namespace VisionIns
             this.xrLbl_ITNAM_Cap.Font = new System.Drawing.Font("맑은 고딕", 6F);
             this.xrLbl_ITNAM_Cap.LocationFloat = new DevExpress.Utils.PointFloat(5F, 191F);
             this.xrLbl_ITNAM_Cap.Name = "xrLbl_ITNAM_Cap";
-            this.xrLbl_ITNAM_Cap.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 0, 0, 0, 254F);
+            this.xrLbl_ITNAM_Cap.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 0, 0, 0, 254F);
             this.xrLbl_ITNAM_Cap.SizeF = new System.Drawing.SizeF(65F, 26F);
             this.xrLbl_ITNAM_Cap.StylePriority.UseFont = false;
             this.xrLbl_ITNAM_Cap.StylePriority.UseTextAlignment = false;
